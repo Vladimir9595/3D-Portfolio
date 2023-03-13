@@ -4,27 +4,27 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
+  School,
   Hero,
   Navbar,
   Tech,
-  Works,
+  Projects,
   StarsCanvas,
 } from './components'
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className="relative z-0 white-gradient">
+        <div style={{ paddingBottom: 100 }}>
           <Navbar />
           <Hero />
         </div>
         <About />
+        <School />
         <Experience />
         <Tech />
-        <Works />
-        <Feedbacks />
+        <Projects />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
