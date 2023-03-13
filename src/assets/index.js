@@ -4,6 +4,7 @@ import creator from './creator.png'
 import mobile from './mobile.png'
 import web from './web.png'
 import github from './github.png'
+import cdn from './cdn.png'
 import menu from './menu.svg'
 import close from './close.svg'
 
@@ -16,15 +17,18 @@ import javascript from './tech/javascript.png'
 import mongodb from './tech/mongodb.png'
 import nodejs from './tech/nodejs.png'
 import reactjs from './tech/reactjs.png'
-import redux from './tech/redux.png'
+import mysql from './tech/mysql.png'
 import tailwind from './tech/tailwind.png'
-import typescript from './tech/typescript.png'
-import threejs from './tech/threejs.svg'
+import php from './tech/php.png'
 
-import meta from './company/meta.png'
-import shopify from './company/shopify.png'
-import starbucks from './company/starbucks.png'
-import tesla from './company/tesla.png'
+import ccs from './company/ccs.png'
+import sonnenhof from './company/sonnenhof.png'
+import glaubitz from './company/glaubitz.png'
+import service from './company/service_civique.png'
+
+import pitagora from './schools/pitagora.png'
+import ifcaad from './schools/ifcaad.png'
+import ccicampus from './schools/ccicampus.png'
 
 import carrent from './carrent.png'
 import jobit from './jobit.png'
@@ -37,6 +41,7 @@ export {
   mobile,
   web,
   github,
+  cdn,
   menu,
   close,
   css,
@@ -48,14 +53,16 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  redux,
+  mysql,
   tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  php,
+  ccs,
+  sonnenhof,
+  glaubitz,
+  service,
+  pitagora,
+  ccicampus,
+  ifcaad,
   carrent,
   jobit,
   tripguide,
