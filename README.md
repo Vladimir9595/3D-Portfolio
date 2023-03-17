@@ -121,6 +121,14 @@ In the `src/` folder we create the `utils/` folder. Inside that the `motion.js` 
 
 In the `src/` folder we create the `constants/` folder. Inside that the `index.js` which containt the `constants.js` content from GitHub Gist file
 
+## Run the project with npm commands
+
+After repalce all files and folders, we can run
+
+```bash
+npm run dev -- --host=[serverName] #for the localhost:5173/ or http://[ipAdress]:5173/
+```
+
 ## Implement Canvas 3D model
 
 We can add the Canvas component in the Hero section.
