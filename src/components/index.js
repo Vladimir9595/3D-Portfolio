@@ -7,6 +7,7 @@ import School from './School'
 import Experience from './Experience'
 import Projects from './Projects'
 import Contact from './Contact'
+import Footer from './Footer'
 
 export {
   Hero,
@@ -16,7 +17,8 @@ export {
   School,
   Experience,
   Projects,
-  Contact,
+    Contact,
+    Footer,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
