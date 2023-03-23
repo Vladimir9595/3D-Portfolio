@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader'
 
 const Earth = ({ isMobile }) => {
-  const earth = useGLTF('./earth_1/scene.gltf')
+  const earth = useGLTF('./earth/scene.gltf')
 
   return (
     <mesh>
@@ -61,7 +61,8 @@ const EarthCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          autoRotate
+          autoRotate={true}
+          autoRotateSpeed={isMobile ? 0.5 : 0.5}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
