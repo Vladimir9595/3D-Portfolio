@@ -20,6 +20,19 @@ import reactjs from './tech/reactjs.png'
 import mysql from './tech/mysql.png'
 import tailwind from './tech/tailwind.png'
 import php from './tech/php.png'
+import android from './tech/android.png'
+import bash from './tech/bash.png'
+import bootstrap from './tech/bootstrap.png'
+import insomnia from './tech/insomnia.png'
+import laravel from './tech/laravel.png'
+import linux from './tech/linux.png'
+import office365 from './tech/office365.png'
+import photoshop from './tech/photoshop.png'
+import python from './tech/python.png'
+import sass from './tech/sass.png'
+import virtualbox from './tech/virtualbox.png'
+import vmware from './tech/vmware.png'
+import windows from './tech/windows.png'
 
 import ccs from './company/ccs.png'
 import sonnenhof from './company/sonnenhof.png'
@@ -29,10 +42,6 @@ import service from './company/service_civique.png'
 import pitagora from './schools/pitagora.png'
 import ifcaad from './schools/ifcaad.png'
 import ccicampus from './schools/ccicampus.png'
-
-import carrent from './carrent.png'
-import jobit from './jobit.png'
-import tripguide from './tripguide.png'
 
 export {
   logo,
@@ -56,6 +65,19 @@ export {
   mysql,
   tailwind,
   php,
+  android,
+  bash,
+  bootstrap,
+  insomnia,
+  laravel,
+  linux,
+  photoshop,
+  python,
+  sass,
+  virtualbox,
+  vmware,
+  windows,
+  office365,
   ccs,
   sonnenhof,
   glaubitz,
@@ -63,7 +85,4 @@ export {
   pitagora,
   ccicampus,
   ifcaad,
-  carrent,
-  jobit,
-  tripguide,
 }
