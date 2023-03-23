@@ -17,6 +17,7 @@ const router = createBrowserRouter(
       <Route path="/technologies" element={<Technologies />} />
     </>,
   ),
+  { basename: '/3D-Portfolio' },
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(

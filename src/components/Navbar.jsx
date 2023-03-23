@@ -13,14 +13,17 @@ const Navbar = () => {
   useEffect(() => {
     const currentRoute = window.location.pathname
     console.log(currentRoute)
-    if (currentRoute === '/') {
+
+    if (currentRoute === '/3D-Portfolio') {
       let active = localStorage.getItem('active') ?? 'null'
       setActive(active)
       document
         .querySelector(`#${active}`)
         ?.scrollIntoView({ behavior: 'smooth' })
     } else {
-      setActive(currentRoute.slice(1))
+      let route = currentRoute.slice(14)
+      console.log(route)
+      setActive(route)
     }
   }, [])
 
