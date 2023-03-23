@@ -7,14 +7,27 @@ import {
   mysql,
   html,
   css,
-  reactjs,
-  php,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
   docker,
+  figma,
+  git,
+  mongodb,
+  nodejs,
+  reactjs,
+  tailwind,
+  php,
+  android,
+  bash,
+  bootstrap,
+  insomnia,
+  laravel,
+  linux,
+  photoshop,
+  python,
+  sass,
+  virtualbox,
+  vmware,
+  windows,
+  office365,
   ccs,
   sonnenhof,
   glaubitz,
@@ -22,62 +35,86 @@ import {
   pitagora,
   ccicampus,
   ifcaad,
-  carrent,
-  jobit,
-  tripguide,
 } from '../assets'
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'About',
+    id: 'technologies',
+    external: true,
+    title: 'Techs',
   },
   {
     id: 'projects',
+    external: false,
     title: 'Projects',
   },
   {
     id: 'news',
+    external: false,
     title: 'News',
   },
   {
     id: 'contact',
+    external: false,
     title: 'Contact',
   },
 ]
 
-const services = [
+export const footLinks = [
   {
-    title: 'Web Developer',
-    icon: web,
+    id: 'technologies',
+    external: true,
+    title: 'Techs',
   },
   {
-    title: 'React Native Developer',
-    icon: mobile,
+    id: 'projects',
+    external: false,
+    title: 'Projects',
   },
   {
-    title: 'Backend Developer',
-    icon: backend,
+    id: 'news',
+    external: false,
+    title: 'News',
   },
   {
-    title: 'Content Creator',
-    icon: creator,
+    id: 'contact',
+    external: false,
+    title: 'Contact',
   },
 ]
 
-const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
+const programming = [
+  //   {
+  //     name: 'HTML 5',
+  //     icon: html,
+  //   },
+  //   {
+  //     name: 'CSS 3',
+  //     icon: css,
+  //   },
   {
     name: 'JavaScript',
     icon: javascript,
   },
+  {
+    name: 'PHP',
+    icon: php,
+  },
+  {
+    name: 'Python',
+    icon: python,
+  },
+  {
+    name: 'Laravel',
+    icon: laravel,
+  },
+  //   {
+  //     name: 'Android',
+  //     icon: android,
+  //   },
+]
+
+const front = [
   {
     name: 'React JS',
     icon: reactjs,
@@ -86,13 +123,20 @@ const technologies = [
     name: 'Tailwind CSS',
     icon: tailwind,
   },
+  //   {
+  //     name: 'Bootstrap',
+  //     icon: bootstrap,
+  //   },
+  //   {
+  //     name: 'Sass',
+  //     icon: sass,
+  //   },
+]
+
+const back = [
   {
     name: 'Node JS',
     icon: nodejs,
-  },
-  {
-    name: 'PHP',
-    icon: php,
   },
   {
     name: 'MySQL',
@@ -102,46 +146,70 @@ const technologies = [
     name: 'MongoDB',
     icon: mongodb,
   },
+]
+
+const devops = [
   {
-    name: 'git',
-    icon: git,
+    name: 'Linux',
+    icon: linux,
   },
+  //   {
+  //     name: 'Windows',
+  //     icon: windows,
+  //   },
   {
-    name: 'figma',
-    icon: figma,
+    name: 'Bash',
+    icon: bash,
   },
   {
     name: 'Docker',
     icon: docker,
   },
+  {
+    name: 'Git',
+    icon: git,
+  },
+  //   {
+  //     name: 'VirtualBox',
+  //     icon: virtualbox,
+  //   },
+  //   {
+  //     name: 'VMWare',
+  //     icon: vmware,
+  //   },
+]
+
+const softwares = [
+  {
+    name: 'Figma',
+    icon: figma,
+  },
+  {
+    name: 'Photoshop',
+    icon: photoshop,
+  },
+  {
+    name: 'Insomnia',
+    icon: insomnia,
+  },
+  //   {
+  //     name: 'Office365',
+  //     icon: office365,
+  //   },
 ]
 
 const experiences = [
   {
-    title: 'Service Civique',
-    company_name: 'Service Civique',
-    icon: service,
-    iconBg: '#383E56',
-    date: 'Oct 2014 - July 2015',
-    dateColor: '#373737',
-    points: [
-      'Participation in the Service Civique project as a volunteer.',
-      'Accompaniment to a public of disabled people in their daily life within different living groups of the IME of the Sonnenhof Foundation.',
-      'Main role : propose and organize various activities throughout the volunteer service.',
-      'Develop skills in social support and teamwork.',
-    ],
-  },
-  {
-    title: 'Medical and Psychological Assistance',
-    company_name: 'Fondation Sonnenhof',
-    icon: sonnenhof,
+    title: 'IT Technical Support',
+    company_name: 'CCS',
+    icon: ccs,
     iconBg: '#E6DEDD',
-    date: 'Oct 2015 - April 2018',
+    date: 'Sept 2021 - Present',
     points: [
-      'Have practiced this profession after graduation working with several different groups.',
-      'Accompany children and adolescents with disabilities in their daily lives.',
-      'Assist children and adolescents with various tasks and provide emotional and psychological support.',
-      'Write individual personal projects for each of them, respecting the norms and procedures in force.',
+      'Work-study contract within the SAT-Client belonging to the CCS of the Crédit Mutuel Alliance Fédérale group in Strasbourg.',
+      'Main role: provide assistance to professional users for their remote banking space.',
+      'Ensure the follow-up of remote banking files (classic transfers, confidential transfers, direct debits).',
+      'Helping users to navigate their online banking space and ensuring the rapid and secure transmission of their financial data.',
     ],
   },
   {
@@ -158,53 +226,35 @@ const experiences = [
     ],
   },
   {
-    title: 'IT Technical Support',
-    company_name: 'CCS',
-    icon: ccs,
+    title: 'Medical and Psychological Assistance',
+    company_name: 'Fondation Sonnenhof',
+    icon: sonnenhof,
     iconBg: '#E6DEDD',
-    date: 'Sept 2021 - Present',
+    date: 'Oct 2015 - April 2018',
     points: [
-      'Work-study contract within the SAT-Client belonging to the CCS of the Crédit Mutuel Alliance Fédérale group in Strasbourg.',
-      'Main role: provide assistance to professional users for their remote banking space.',
-      'Ensure the follow-up of remote banking files (classic transfers, confidential transfers, direct debits).',
-      'Helping users to navigate their online banking space and ensuring the rapid and secure transmission of their financial data.',
+      'Have practiced this profession after graduation working with several different groups.',
+      'Accompany children and adolescents with disabilities in their daily lives.',
+      'Assist children and adolescents with various tasks and provide emotional and psychological support.',
+      'Write individual personal projects for each of them, respecting the norms and procedures in force.',
+    ],
+  },
+  {
+    title: 'Service Civique',
+    company_name: 'Service Civique',
+    icon: service,
+    iconBg: '#383E56',
+    date: 'Oct 2014 - July 2015',
+    dateColor: '#373737',
+    points: [
+      'Participation in the Service Civique project as a volunteer.',
+      'Accompaniment to a public of disabled people in their daily life within different living groups of the IME of the Sonnenhof Foundation.',
+      'Main role : propose and organize various activities throughout the volunteer service.',
+      'Develop skills in social support and teamwork.',
     ],
   },
 ]
 
 const schools = [
-  {
-    title: "Bachelor's degree",
-    company_name: 'ITES Pitagora',
-    icon: pitagora,
-    iconBg: '#383E56',
-    date: 'Sept 2009 - July 2014',
-    points: [
-      'Italian language and literature.',
-      'English language and literature.',
-      'French language and literature.',
-      'History.',
-      'Mathematics.',
-      'Law and Economics.',
-      'Information technology for business.',
-      'Business Administration.',
-      'Political Economy.',
-    ],
-  },
-  {
-    title: 'Medical and Psychological Assistance',
-    company_name: 'IFCAAD Schiltigheim',
-    icon: ifcaad,
-    iconBg: '#E6DEDD',
-    date: 'October 2015 - May 2017',
-    points: [
-      'Accompany the person in the essential acts of daily life.',
-      'Respect for the person and the rules of hygiene and safety.',
-      'Accompaniment in social and relational life.',
-      'Positioning as a social worker in the context of intervention.',
-      'Work in a multi-professional team, risk management and processing of information related to the support.',
-    ],
-  },
   {
     title: 'Superior Technical Bachelor',
     company_name: 'CCI Campus Strasbourg',
@@ -224,32 +274,37 @@ const schools = [
       'Programming languages: HTML, CSS, JS, PHP, MYSQL, KOTLIN',
     ],
   },
-]
-
-const testimonials = [
   {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+    title: 'Medical and Psychological Assistance',
+    company_name: 'IFCAAD Schiltigheim',
+    icon: ifcaad,
+    iconBg: '#E6DEDD',
+    date: 'October 2015 - May 2017',
+    points: [
+      'Accompany the person in the essential acts of daily life.',
+      'Respect for the person and the rules of hygiene and safety.',
+      'Accompaniment in social and relational life.',
+      'Positioning as a social worker in the context of intervention.',
+      'Work in a multi-professional team, risk management and processing of information related to the support.',
+    ],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+    title: "Bachelor's degree",
+    company_name: 'ITES Pitagora',
+    icon: pitagora,
+    iconBg: '#383E56',
+    date: 'Sept 2009 - July 2014',
+    points: [
+      'Italian language and literature.',
+      'English language and literature.',
+      'French language and literature.',
+      'History.',
+      'Mathematics.',
+      'Law and Economics.',
+      'Information technology for business.',
+      'Business Administration.',
+      'Political Economy.',
+    ],
   },
 ]
 
@@ -257,18 +312,18 @@ const projects = [
   {
     name: 'CCI APPRO',
     description:
-      'We have produced a technical documentation explaining all the technical parts concerning the CCI APPRO project of our AP3. This documentation is intended for users who wish to install the project for technical and functional use.',
+      'I have produced a technical documentation explaining all the technical parts concerning the CCI APPRO project of our AP3. This documentation is intended for users who wish to install the project for technical and functional use.',
     tags: [
       {
-        name: 'react',
+        name: 'tailwind',
         color: 'green-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'mysql',
         color: 'white-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'laravel',
         color: 'red-text-gradient',
       },
     ],
@@ -283,43 +338,77 @@ const projects = [
       'HTML form with PHP processing in a Word Press article for the BTS SIO 21-23 Blog. During our second year of BTS, we realized articles present in the BTS blog. I realized an article which speaks about an HTML form with a treatment in PHP. I invite you to click the link below',
     tags: [
       {
-        name: '',
+        name: 'wordpress',
         color: 'green-text-gradient',
       },
       {
-        name: '',
+        name: 'seo',
         color: 'white-text-gradient',
       },
       {
-        name: '',
+        name: 'blog',
         color: 'red-text-gradient',
       },
     ],
     image:
       'https://ih1.redbubble.net/image.541875930.4233/st,small,507x507-pad,600x600,f8f8f8.u6.jpg',
-    source_code_link: 'https://github.com/',
+    source_code_link:
+      'https://btssio-ccicampus-strasbourg.fr/formulaire_html_et_traitement_en_php/',
   },
   {
-    name: 'Trip Guide',
+    name: 'Business Continuity Plan',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'This work consisted in the realization of a situation around the BCP (Business Continuity Plan). Within a client company, my work consists, under the responsibility of the system and network administrator, to participate in the design, installation, parameter setting and exploitation of the information system of the company. Starting with an expression of needs, I elaborated a technical offer answering all the requirements.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'work',
         color: 'green-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'redaction',
         color: 'white-text-gradient',
       },
       {
-        name: 'css',
+        name: 'plan',
         color: 'red-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image:
+      'https://www.wysiwyg.fr/wp-content/uploads/2021/12/F36-1-768x535.png',
+    source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solution_PCA.pdf',
+  },
+  {
+    name: 'BCP & DRP',
+    description:
+      'This work consisted in the realization of a research work around the main concepts of a BCP (Business Continuity Plan) and DRP (Disaster Recovery Plan). To organize and realize this research work, I relied on the 5W method (Who - What - Where - When - Why). This was done in order to understand the meaning and the differences between a BCP and a DRP.',
+    tags: [
+      {
+        name: 'work',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'redaction',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'plan',
+        color: 'red-text-gradient',
+      },
+    ],
+    image: 'https://myosotis.fr/wp-content/uploads/2017/04/pca-pra-1.png',
+    source_code_link:
+      ' https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
   },
 ]
 
-export { services, technologies, experiences, schools, testimonials, projects }
+export {
+  programming,
+  front,
+  back,
+  devops,
+  softwares,
+  experiences,
+  schools,
+  projects,
+}
