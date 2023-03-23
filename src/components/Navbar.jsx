@@ -8,6 +8,22 @@ import { logo, menu, close } from '../assets'
 const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
+
+  // recuperation de la route
+  useEffect(() => {
+    const currentRoute = window.location.pathname
+    console.log(currentRoute)
+    if (currentRoute === '/') {
+      let active = localStorage.getItem('active') ?? 'null'
+      setActive(active)
+      document
+        .querySelector(`#${active}`)
+        ?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      setActive(currentRoute.slice(1))
+    }
+  }, [])
+
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#232323]`}
@@ -18,6 +34,7 @@ const Navbar = () => {
           className="flex items-center gap-2"
           onClick={() => {
             setActive('')
+            localStorage.removeItem('active')
             window.scrollTo(0, 0)
           }}
         >
@@ -31,11 +48,23 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? 'text-white' : 'text-secondary'
+                active === link.id ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => {
+                setActive(link.id)
+                localStorage.setItem('active', link.id)
+              }}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <Link
+                to={link.external ? `/${link.id}` : `/#${link.id}`}
+                onClick={() => {
+                  document
+                    .querySelector(`#${link.id}`)
+                    .scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
+                {link.title}
+              </Link>
             </li>
           ))}
         </ul>
