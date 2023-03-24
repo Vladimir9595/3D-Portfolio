@@ -262,4 +262,59 @@ import { slideIn } from '../utils/motion'
 ### Send emails with EmailJS
 
 First of all we need to create an account on [EmailJS](https://www.emailjs.com/)
-In this website you can _Add New Service_ create a template for your email and get the service ID, template ID and user ID.
+In this website you can _Add New Service_ create a template for your email and get the service ID, template ID and public key.
+
+In our `Contact.jsx` section we build two constants :
+
+```javascript
+const handleChange = (e) => {}
+
+const handleSubmit = (e) => {}
+```
+
+The first one is to handle the change of the input and the second one is to handle the submit of the form.
+
+In the `handleSubmit` function we need to call the `emailjs.send` function with the service ID, template ID and public key from your own account.
+We can also include the `.then` and `.catch` functions to handle the response of the email.
+
+```javascript
+const handleSubmit = (e) => {
+  e.preventDefault()
+  setLoading(true)
+
+  emailjs
+    .send(
+      '(your service ID)',
+      '(your template ID)',
+      {
+        from_name: form.name,
+        to_name: '(your name)',
+        from_email: form.email,
+        to_email: '(your email)',
+        message: form.message,
+      },
+      '(your public key)',
+    )
+    .then(() => {
+      setLoading(false)
+      alert(
+        'Thank you for your message ! I will get back to you as soon as possible.',
+      )
+
+      setForm(
+        {
+          name: '',
+          email: '',
+          message: '',
+        },
+        (error) => {
+          setLoading(false)
+
+          console.log(error)
+
+          alert('Something went wrong, please try again later.')
+        },
+      )
+    })
+}
+```
