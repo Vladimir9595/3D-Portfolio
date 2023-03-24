@@ -2,7 +2,8 @@ import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
-import { styles } from '../styles'
+import { gitc, facebook, instagram, linkedin } from '../assets'
+
 import { PlanetCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
@@ -17,9 +18,50 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false)
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
+  }
 
-  const handleSubmit = (e) => {}
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs
+      .send(
+        'service_lmr2kiw',
+        'template_jy37bss',
+        {
+          from_name: form.name,
+          to_name: 'Vladimir SACCHETTO',
+          from_email: form.email,
+          to_email: 'vladisac@hotmail.it',
+          message: form.message,
+        },
+        'BYad4C4kaaYFX_iri',
+      )
+      .then(() => {
+        setLoading(false)
+        alert(
+          'Thank you for your message ! I will get back to you as soon as possible.',
+        )
+
+        setForm(
+          {
+            name: '',
+            email: '',
+            message: '',
+          },
+          (error) => {
+            setLoading(false)
+
+            console.log(error)
+
+            alert('Something went wrong, please try again later.')
+          },
+        )
+      })
+  }
 
   return (
     <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
@@ -76,12 +118,72 @@ const Contact = () => {
             />
           </label>
 
-          <button
-            type="submit"
-            className="bg-[#ffffffee] py-3 px-8 rounded-xl outline-none w-fit text-[#373737] font-bold shadow-md shadow-primary"
-          >
-            {loading ? 'Sending...' : 'Send'}
-          </button>
+          <div className="flex justify-between">
+            <div>
+              <button
+                type="submit"
+                className="bg-[#ffffffee] py-3 px-8 rounded-xl outline-none w-fit text-[#373737] font-bold shadow-md shadow-primary"
+              >
+                {loading ? 'Sending...' : 'Send'}
+              </button>
+            </div>
+            <div className="flex items-center">
+              <div
+                onClick={() =>
+                  window.open(
+                    'https://www.facebook.com/vladimir.sacchetto/',
+                    '_blank',
+                  )
+                }
+                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-auto"
+              >
+                <img
+                  src={facebook}
+                  alt="facebook"
+                  className="w-7 h-7 object-contain"
+                />
+              </div>
+              <div
+                onClick={() =>
+                  window.open('https://www.instagram.com/vlado5991/', '_blank')
+                }
+                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-5"
+              >
+                <img
+                  src={instagram}
+                  alt="instagram"
+                  className="w-7 h-7 object-contain"
+                />
+              </div>
+              <div
+                onClick={() =>
+                  window.open('https://github.com/Vladimir9595', '_blank')
+                }
+                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-5"
+              >
+                <img
+                  src={gitc}
+                  alt="github"
+                  className="w-7 h-7 object-contain"
+                />
+              </div>
+              <div
+                onClick={() =>
+                  window.open(
+                    'https://www.linkedin.com/in/vladimir-sacchetto-16642b116/?locale=fr_FR',
+                    '_blank',
+                  )
+                }
+                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-5"
+              >
+                <img
+                  src={linkedin}
+                  alt="linkedin"
+                  className="w-7 h-7 object-contain"
+                />
+              </div>
+            </div>
+          </div>
         </form>
       </motion.div>
 
