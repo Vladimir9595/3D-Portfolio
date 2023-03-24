@@ -1,4 +1,4 @@
-import { Contact, Navbar, Tech, StarsCanvas } from './components'
+import { Navbar, Tech, Footer } from './components'
 
 const Technologies = () => {
   return (
@@ -7,6 +7,7 @@ const Technologies = () => {
         <Navbar />
       </div>
       <Tech />
+      <Footer />
     </div>
   )
 }
