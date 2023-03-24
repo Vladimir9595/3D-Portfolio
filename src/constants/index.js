@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   mysql,
   html,
@@ -62,24 +58,9 @@ export const navLinks = [
 
 export const footLinks = [
   {
-    id: 'technologies',
+    id: 'mentions',
     external: true,
-    title: 'Techs',
-  },
-  {
-    id: 'projects',
-    external: false,
-    title: 'Projects',
-  },
-  {
-    id: 'news',
-    external: false,
-    title: 'News',
-  },
-  {
-    id: 'contact',
-    external: false,
-    title: 'Contact',
+    title: 'Legal Mentions',
   },
 ]
 
@@ -196,6 +177,39 @@ const softwares = [
   //     name: 'Office365',
   //     icon: office365,
   //   },
+]
+
+const mentions = [
+  {
+    title: 'Editor and owner of the website',
+    content:
+      'Mr. Vladimir SACCHETTO\n Editorial manager : Vladimir SACCHETTO\n Email : vladisac@hotmail.it\n Website : www.vladimir-portfolio.com',
+  },
+  {
+    title: 'Hosting',
+    content:
+      'Host : SAS OVH\n 2 rue Kellermann\n BP 80157, 59100 Roubaix\n Website: www.ovh.com\n Telephone: +33 (0) 899 701 761 (1.349 € incl. tax per call, and 0.337 € incl. tax/min)\n Fax : + 33 (0) 3 20 20 09 58',
+  },
+  {
+    title: 'Terms and conditions of use',
+    content:
+      'This site www.vladimir-portfolio.com is proposed in different web languages (ReactJs - ThreeJs - TailwindCSS). For a better comfort of use and a more pleasant graphics, it is recommended to use modern browsers such as Microsoft Edge, Safari, Firefox, Google Chrome, Brave, etc...\n Mr. Vladimir SACCHETTO uses all the means at his disposal to ensure reliable information and a reliable update of his website. However, errors or omissions may occur. Mr. Vladimir SACCHETTO is in no way responsible for the use made of this information, and for any direct or indirect damage that may result from it.',
+  },
+  {
+    title: 'Intellectual Property Rights',
+    content:
+      'All the content of this site, including texts, animations, logos and icons, as well as their layout, are the exclusive property of Mr. Vladimir SACCHETTO. Any reproduction, distribution, modification, adaptation, retransmission or publication, even partial, of these different elements is strictly forbidden without the express written consent of Mr. Vladimir SACCHETTO.\n This representation or reproduction, by any means whatsoever, constitutes an infringement punishable by articles L.335-2 and following of the Intellectual Property Code.\n Failure to comply with this prohibition constitutes an infringement that may incur the civil and criminal liability of the infringer. In addition, the owners of the copied contents could take legal action against you.',
+  },
+  {
+    title: 'Disputes',
+    content:
+      'The present conditions of the site are governed by the French laws and any dispute or litigation which could arise from the interpretation or the execution of these will be of the exclusive competence of the courts. The reference language for the settlement of any disputes is French.',
+  },
+  {
+    title: 'Personal information',
+    content:
+      'In general, you are not required to provide us with your personal data when you visit the www.vladimir-portfolio.com website.\n You can refuse to provide your personal data. In this case, you will not be able to use the services of the site, in particular that of requesting information.\n We may automatically collect certain information about you when you simply browse this website, including: information about your use of the site, such as the areas you visit and the services you access, your IP address, your browser type, your access times.\n Such information is used exclusively for internal statistical purposes. The databases are protected by the provisions of the law of July 1, 1998 transposing the directive 96/9 of March 11, 1996 on the legal protection of databases.',
+  },
 ]
 
 const experiences = [
@@ -402,6 +416,69 @@ const projects = [
   },
 ]
 
+const news = [
+  {
+    name: 'Vite.js Tutorial',
+    description:
+      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+    image:
+      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
+    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
+    published_at: 'Apr 6, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'Vite.js Tutorial',
+    description:
+      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+    image:
+      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
+    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
+    published_at: 'Apr 6, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'Vite.js Tutorial',
+    description:
+      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+    image:
+      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
+    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
+    published_at: 'Apr 6, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'Vite.js Tutorial',
+    description:
+      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+    image:
+      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
+    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
+    published_at: 'Apr 6, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'Vite.js Tutorial',
+    description:
+      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+    image:
+      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
+    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
+    published_at: 'Apr 6, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'Vite.js Tutorial',
+    description:
+      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+    image:
+      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
+    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
+    published_at: 'Apr 6, 2022',
+    read: 'Read more...',
+  },
+]
+
 export {
   programming,
   front,
@@ -409,6 +486,8 @@ export {
   devops,
   softwares,
   experiences,
+  mentions,
   schools,
   projects,
+  news,
 }
