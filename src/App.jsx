@@ -6,6 +6,7 @@ import {
   Hero,
   Navbar,
   Projects,
+  News,
   StarsCanvas,
   Footer,
 } from './components'
@@ -21,6 +22,7 @@ const App = () => {
       <School />
       <Experience />
       <Projects />
+      <News />
       <div className="relative z-0">
         <Contact />
         <StarsCanvas />
