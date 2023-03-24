@@ -1,12 +1,13 @@
 import logo from './vsLogo.svg'
-import backend from './backend.png'
-import creator from './creator.png'
-import mobile from './mobile.png'
-import web from './web.png'
 import github from './github.png'
 import cdn from './cdn.png'
 import menu from './menu.svg'
 import close from './close.svg'
+
+import facebook from './contacts/facebook.png'
+import gitc from './contacts/git.png'
+import instagram from './contacts/instagram.png'
+import linkedin from './contacts/linkedin.png'
 
 import css from './tech/css.png'
 import docker from './tech/docker.png'
@@ -45,14 +46,14 @@ import ccicampus from './schools/ccicampus.png'
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   cdn,
   menu,
   close,
+  facebook,
+  instagram,
+  gitc,
+  linkedin,
   css,
   docker,
   figma,
