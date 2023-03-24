@@ -12,7 +12,6 @@ const Navbar = () => {
   // recuperation de la route
   useEffect(() => {
     const currentRoute = window.location.pathname
-    console.log(currentRoute)
 
     if (currentRoute === '/3D-Portfolio') {
       let active = localStorage.getItem('active') ?? 'null'
@@ -22,7 +21,6 @@ const Navbar = () => {
         ?.scrollIntoView({ behavior: 'smooth' })
     } else {
       let route = currentRoute.slice(14)
-      console.log(route)
       setActive(route)
     }
   }, [])
@@ -42,8 +40,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
-          <p className="text-white text-[17px] font-bold cursor-pointer flex">
-            Vladimir&nbsp;<span className="sm:block hidden">| Sacchetto </span>
+          <p className="text-white text-[17px] font-bold cursor-pointer sm:block hidden">
+            Vladimir&nbsp;| Sacchetto
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
