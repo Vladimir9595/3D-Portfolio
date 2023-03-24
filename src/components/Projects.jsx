@@ -23,7 +23,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-[#232323] p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-[#232323] p-5 rounded-2xl sm:w-[360px] w-full h-[600px]"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -37,11 +37,7 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer "
             >
               <div className="white-gradient w-7 h-7 rounded-full flex justify-center items-center cursor-pointer ">
-                <img
-                  src={cdn}
-                  alt="cdn"
-                  className="w-1/2 h-1/2 object-contain"
-                />
+                <img src={cdn} alt="cdn" className="w-5 h-5 object-contain" />
               </div>
             </div>
           </div>
@@ -51,7 +47,7 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 absolute bottom-[22px]">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -80,10 +76,10 @@ const Projects = () => {
           className="mt-3 text-[#373737] text-[17px] max-w-3xl leading-[30px]"
         >
           The following projects highlight my skills and experience through
-          concrete examples of my work. Each project is briefly described with
-          links to code repositories and documents. It reflects my ability to
-          solve complex problems, work with different technologies and to manage
-          projects efficiently.
+          concrete examples of my work. <br /> Each project is briefly described
+          with links to code repositories and documents. <br /> It reflects my
+          ability to solve complex problems, work with different technologies
+          and to manage projects efficiently.
         </motion.p>
       </div>
 
