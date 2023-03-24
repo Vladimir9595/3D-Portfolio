@@ -6,7 +6,9 @@ import Tech from './Tech'
 import School from './School'
 import Experience from './Experience'
 import Projects from './Projects'
+import News from './News'
 import Contact from './Contact'
+import Mention from './Mention'
 import Footer from './Footer'
 
 export {
@@ -17,8 +19,10 @@ export {
   School,
   Experience,
   Projects,
-    Contact,
-    Footer,
+  News,
+  Contact,
+  Mention,
+  Footer,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
