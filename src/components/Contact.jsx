@@ -2,8 +2,6 @@ import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
-import { gitc, facebook, instagram, linkedin } from '../assets'
-
 import { PlanetCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
@@ -126,62 +124,6 @@ const Contact = () => {
               >
                 {loading ? 'Sending...' : 'Send'}
               </button>
-            </div>
-            <div className="flex items-center">
-              <div
-                onClick={() =>
-                  window.open(
-                    'https://www.facebook.com/vladimir.sacchetto/',
-                    '_blank',
-                  )
-                }
-                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-auto"
-              >
-                <img
-                  src={facebook}
-                  alt="facebook"
-                  className="w-7 h-7 object-contain"
-                />
-              </div>
-              <div
-                onClick={() =>
-                  window.open('https://www.instagram.com/vlado5991/', '_blank')
-                }
-                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-5"
-              >
-                <img
-                  src={instagram}
-                  alt="instagram"
-                  className="w-7 h-7 object-contain"
-                />
-              </div>
-              <div
-                onClick={() =>
-                  window.open('https://github.com/Vladimir9595', '_blank')
-                }
-                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-5"
-              >
-                <img
-                  src={gitc}
-                  alt="github"
-                  className="w-7 h-7 object-contain"
-                />
-              </div>
-              <div
-                onClick={() =>
-                  window.open(
-                    'https://www.linkedin.com/in/vladimir-sacchetto-16642b116/?locale=fr_FR',
-                    '_blank',
-                  )
-                }
-                className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-5"
-              >
-                <img
-                  src={linkedin}
-                  alt="linkedin"
-                  className="w-7 h-7 object-contain"
-                />
-              </div>
             </div>
           </div>
         </form>
