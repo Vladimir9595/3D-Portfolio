@@ -5,8 +5,6 @@ import {
   School,
   Hero,
   Navbar,
-  Projects,
-  News,
   StarsCanvas,
   Footer,
 } from './components'
@@ -14,15 +12,13 @@ import {
 const App = () => {
   return (
     <div className="relative z-0 white-gradient">
-      <div style={{ paddingBottom: 100 }}>
+      <div>
         <Navbar />
         <Hero />
       </div>
       <About />
       <School />
       <Experience />
-      <Projects />
-      <News />
       <div className="relative z-0">
         <Contact />
         <StarsCanvas />
