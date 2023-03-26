@@ -1,4 +1,6 @@
-<div align="center">
+<a name="readme-top"></a>
+
+<div align="center" >
 <h1 align="center">Portfolio 3D</h1>
  <img
       src="https://cdn.vladimir-portfolio.com/shared/images/vs_logo.png"
@@ -76,7 +78,7 @@ To build a 3D canvas model, we need some additionals packages.
 To make that, run the command below :
 
 ```bash
-npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
+npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome @fortawesome/fontawesome-svg-core framer-motion react-router-dom
 ```
 
 ### Add tailwind using Vite proprieties
@@ -126,8 +128,55 @@ In the `src/` folder we create the `constants/` folder. Inside that the `index.j
 After repalce all files and folders, we can run
 
 ```bash
-npm run dev -- --host=[serverName] #for the localhost:5173/ or http://[ipAdress]:5173/
+npm run dev # to run the project in development mode
 ```
+
+## Routing with React Router
+
+To make the routing in the project we use the package **react-router-dom** that we installed before.
+
+In the src folder we create a file called `main.jsx`.
+
+I show you my file to make the routing in the project :
+
+```javascript
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from 'react-router-dom'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import Technologies from './Technologies'
+import Articles from './Articles'
+import Projs from './Proj'
+import Mentions from './Mentions'
+import './index.css'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<App />} />
+      <Route path="/technologies" element={<Technologies />} />
+      <Route path="/mentions" element={<Mentions />} />
+      <Route path="/projects" element={<Projs />} />
+      <Route path="/news" element={<Articles />} />
+    </>,
+  ),
+  { basename: '/3D-Portfolio' },
+)
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
+)
+```
+
+In this file i import the package **react-router-dom** and the components of the project.
+Then i create a router with the package **react-router-dom** and i add the components in the router.
 
 ## Implement Canvas 3D model
 
@@ -206,7 +255,7 @@ import { motion } from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css'
 
 import { styles } from '../styles'
-import { experiences } from '../constants'
+import { experiences, school } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { textVariant } from '../utils/motion'
 ```
@@ -229,9 +278,9 @@ import {
 import CanvasLoader from '../Loader'
 ```
 
-## Add the Projects section
+## Add the Projects and News section
 
-In the Projects section we need to import some libraries to build the projects cards.
+In the Projects and News section we need to import some libraries to build the projects and news cards.
 
 ```javascript
 import Tilt from 'react-tilt'
@@ -240,7 +289,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { cdn } from '../assets'
 import { SectionWrapper } from '../hoc'
-import { projects } from '../constants'
+import { projects, news } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 ```
 
@@ -318,3 +367,55 @@ const handleSubmit = (e) => {
     })
 }
 ```
+
+## Add the Footer section
+
+In the Footer section we need to import some libraries to build the footer.
+
+```javascript
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+
+// For the social media icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithub,
+  faLinkedin,
+  faFacebook,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons'
+
+import { styles } from '../styles'
+import { footLinks } from '../constants'
+```
+
+## Add the 404 page
+
+In our `main.jsx` file we can add the routing for the 404 page.
+
+```javascript
+<Route path="*" element={<Error404 />} />
+```
+
+Then we create the `Error404.jsx` file in the `src` folder who call our page.
+
+# Translate the website
+
+We can use the [i18next](https://www.i18next.com/) library to translate the website.
+
+## Add the i18next library
+
+We can install the library with the command :
+
+```bash
+npm install --legacy-peer-deps i18next --save
+```
+
+Then you can create your `i18next.config.js` file in the `src` folder.
+
+## :wave: Contributors
+
+- **Vladimir SACCHETTO** _alias_ [@VladimirSacchetto](https://github.com/Vladimir9595)
+- **Alexis HENRY** _alias_ [@AlxisHenry](https://github.com/AlxisHenry)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
