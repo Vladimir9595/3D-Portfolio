@@ -405,7 +405,7 @@ We can use the [i18next](https://www.i18next.com/) library to translate the webs
 
 ## Add the i18next library
 
-We can install the library with the command :
+We can install the library with the command below :
 
 ```bash
 npm install --legacy-peer-deps i18next --save
