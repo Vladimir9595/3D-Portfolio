@@ -1,11 +1,9 @@
-import { motion } from 'framer-motion'
-
 import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto overflow-x-hidden">
       <div
         className={`${styles.paddingX} absolute top-[100px] max-w-7xl mx-auto flex flex-row itenms-start gap-5`}
       >
@@ -27,30 +25,6 @@ const Hero = () => {
       </div>
 
       <EarthCanvas />
-
-      <div
-        className="absolute xs:bottom-10 w-full flex justify-center items-center
-      "
-        style={{
-          marginBottom: '-135px',
-        }}
-      >
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#373737] flex justify-center items-start p-2">
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: 'loop',
-              }}
-              className="w-3 h-3 rounded-full bg-[#373737] mb-1"
-            />
-          </div>
-        </a>
-      </div>
     </section>
   )
 }

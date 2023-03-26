@@ -42,7 +42,7 @@ const SchoolCard = ({ school }) => (
       {school.points.map((point, index) => (
         <li
           key={`school-point-${index}`}
-          className="text-[#373737] text-[14px] pl-1 tracking-wider"
+          className="text-[#373737] sm:text-justify text-start text-[14px] pl-1 tracking-wider"
         >
           {point}
         </li>

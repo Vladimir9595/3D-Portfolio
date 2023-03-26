@@ -1,5 +1,4 @@
 import React from 'react'
-import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
@@ -16,7 +15,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-5 text-[#373737] text-[17px] max-w-3xl leading-[30px]"
+        className="mt-5 text-[#373737] text-justify sm:text-[18px] text-[15px] max-w-3xl leading-[30px]"
       >
         I am a serious and invested person, ready to assume missions as a web
         developer for the maintenance and management of sites. <br /> I'm

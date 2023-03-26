@@ -15,7 +15,7 @@ const Mention = () => {
       {mentions.map((mention) => (
         <div key={mention.title}>
           <motion.p
-            className={`${styles.sectionSubText} font-bold sm:text-[25px] text-[19px] leading-[30px]`}
+            className={`${styles.sectionSubText} font-semibold sm:text-[24px] text-[18px] leading-[30px]`}
           >
             {' '}
             {mention.title}{' '}
@@ -27,7 +27,7 @@ const Mention = () => {
                 __html: mention.content.replace(/\n/g, '<br />'),
               }}
               variants={fadeIn('', '', 0.1, 1)}
-              className="my-5 text-[#232323] sm:text-[18px] leading-[30px]"
+              className="my-5 text-[#232323] text-justify sm:text-[18px] text-[15px] leading-[30px]"
             />
           </div>
         </div>

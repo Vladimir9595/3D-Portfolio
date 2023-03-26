@@ -38,7 +38,7 @@ const Tech = () => {
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mb-5 text-[#373737] text-[18px] leading-[30px]"
+        className="mb-5 text-[#373737] text-justify sm:text-[18px] text-[15px] leading-[30px]"
       >
         In this section, I will present the technologies that I acquired during
         my BTS training, as well as those that I learned on my own. <br /> To
@@ -48,7 +48,9 @@ const Tech = () => {
 
       {technologies.map((technology) => (
         <div key={technology.title}>
-          <motion.p className={styles.sectionSubText}>
+          <motion.p
+            className={`${styles.sectionSubText} font-semibold sm:text-[22px] text-[18px] leading-[30px]`}
+          >
             {technology.title}
           </motion.p>
 
