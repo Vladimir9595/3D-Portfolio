@@ -10,6 +10,7 @@ import News from './News'
 import Contact from './Contact'
 import Mention from './Mention'
 import Footer from './Footer'
+import NotFound from './NotFound'
 
 export {
   Hero,
@@ -23,6 +24,7 @@ export {
   Contact,
   Mention,
   Footer,
+  NotFound,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
