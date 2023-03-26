@@ -4,15 +4,10 @@ import cdn from './cdn.png'
 import menu from './menu.svg'
 import close from './close.svg'
 
-import facebook from './contacts/facebook.png'
-import gitc from './contacts/git.png'
-import instagram from './contacts/instagram.png'
-import linkedin from './contacts/linkedin.png'
-
 import css from './tech/css.png'
 import docker from './tech/docker.png'
 import figma from './tech/figma.png'
-import git from './tech/git.png'
+import git from './tech/git.svg'
 import html from './tech/html.png'
 import javascript from './tech/javascript.png'
 import mongodb from './tech/mongodb.png'
@@ -50,10 +45,6 @@ export {
   cdn,
   menu,
   close,
-  facebook,
-  instagram,
-  gitc,
-  linkedin,
   css,
   docker,
   figma,
