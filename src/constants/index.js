@@ -41,12 +41,12 @@ export const navLinks = [
   },
   {
     id: 'projects',
-    external: false,
+    external: true,
     title: 'Projects',
   },
   {
     id: 'news',
-    external: false,
+    external: true,
     title: 'News',
   },
   {
@@ -165,10 +165,10 @@ const softwares = [
     name: 'Figma',
     icon: figma,
   },
-  {
-    name: 'Photoshop',
-    icon: photoshop,
-  },
+  //   {
+  //     name: 'Photoshop',
+  //     icon: photoshop,
+  //   },
   {
     name: 'Insomnia',
     icon: insomnia,
@@ -322,11 +322,34 @@ const schools = [
   },
 ]
 
-const projects = [
+const schoolProjects = [
   {
-    name: 'CCI APPRO',
+    name: 'CCI APPRO - Technical Documentation',
     description:
       'I have produced a technical documentation explaining all the technical parts concerning the CCI APPRO project of our AP3. This documentation is intended for users who wish to install the project for technical and functional use.',
+    tags: [
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mysql',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'laravel',
+        color: 'red-text-gradient',
+      },
+    ],
+    image:
+      'https://cdn.vladimir-portfolio.com/shared/images/logo_ccicampus_appro.png',
+    source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-campus_doc_technique.pdf',
+  },
+  {
+    name: 'CCI APPRO - User Documentation',
+    description:
+      'I have created a user documentation explaining all the functionalities of the CCI APPRO platform of our AP3. This documentation is intended for users who wish to interact with the web application.',
     tags: [
       {
         name: 'tailwind',
@@ -368,6 +391,29 @@ const projects = [
       'https://ih1.redbubble.net/image.541875930.4233/st,small,507x507-pad,600x600,f8f8f8.u6.jpg',
     source_code_link:
       'https://btssio-ccicampus-strasbourg.fr/formulaire_html_et_traitement_en_php/',
+  },
+  {
+    name: 'Word Press article',
+    description:
+      'We have made articles in the WordPress web page of our SIO 21 class. Here I show the article that I personally created. This article is about a general introduction to HTML and CSS programming languages. I invite you to click on the link in order to see my article as well as the website of my class. Have a nice reading.',
+    tags: [
+      {
+        name: 'wordpress',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'seo',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'blog',
+        color: 'red-text-gradient',
+      },
+    ],
+    image:
+      'https://programadoresbrasil.com.br/wp-content/uploads/2020/02/Introduction-to-HTML-and-CSS-for-Beginners-Hafiza-Rabbia-Shafiq.jpg',
+    source_code_link:
+      'https://btssio-ccicampus-strasbourg.fr/quest-ce-que-le-bts-sio/',
   },
   {
     name: 'Business Continuity Plan',
@@ -412,7 +458,147 @@ const projects = [
     ],
     image: 'https://myosotis.fr/wp-content/uploads/2017/04/pca-pra-1.png',
     source_code_link:
-      ' https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
+      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
+  },
+  {
+    name: 'Firewall Pf_Sense',
+    description:
+      'During my first year of BTS, I acquired skills in installing and configuring the Pf_Sense open source firewall. As part of a personal assignment during the cybersecurity course, we redirected a Windows Server virtual machine to the IP address range configured in the Pf_Sense server. A documentation summarizing this experiment is available.',
+    tags: [
+      {
+        name: 'work',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'firewall',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'server',
+        color: 'red-text-gradient',
+      },
+    ],
+    image:
+      'https://adeo-informatique.fr/wp-content/uploads/2018/11/pfSense-logo_ok.png',
+    source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_PF_Sense.pdf',
+  },
+]
+
+const workProjects = [
+  {
+    name: 'Remote Banking',
+    description:
+      'Remote Banking Technical Assistance (RBA) is a technical assistance service offered by banks to help their customers solve problems related to the use of their online banking services, such as payment transactions, fund transfers and account inquiries.',
+    tags: [
+      {
+        name: 'work',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'BAD',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'bank',
+        color: 'red-text-gradient',
+      },
+    ],
+    image: 'https://cdn.vladimir-portfolio.com/shared/images/CM_CIC.jpg',
+    source_code_link:
+      ' https://cdn.vladimir-portfolio.com/shared/pdf/Assistance technique pour la Banque à distance (BAD).pdf',
+  },
+  {
+    name: 'Software solution HBS',
+    description:
+      'The Help and Accompaniment in the HBS software solution aims at offering a technical and operational support to the users of this software. The professionals in charge of this assistance must be able to solve the problems related to the functioning of the software, as well as to bring advice and tips to optimize its use.',
+    tags: [
+      {
+        name: 'work',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'HBS',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'logiciel',
+        color: 'red-text-gradient',
+      },
+    ],
+    image: 'https://i.ytimg.com/vi/-5MWtSwYZK0/maxresdefault.jpg',
+    source_code_link:
+      ' https://cdn.vladimir-portfolio.com/shared/pdf/Aide et accompagnement dans la solution logicielle HBS.pdf',
+  },
+  {
+    name: 'Professional interview',
+    description:
+      'Carried out in the company. The individual professional interview is an annual meeting where an employee meets his or her manager to discuss his or her achievements, acquired skills, aspirations and career development prospects. The goal is to define a personalized action plan for the coming year.',
+    tags: [
+      {
+        name: 'work',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'meeting',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'individual',
+        color: 'red-text-gradient',
+      },
+    ],
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYRS-wpAG0tfAlhQSBlvVfmmSntuWoQ7TUg&usqp=CAU',
+    source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/Entretien professionnel individuel.pdf',
+  },
+]
+
+const personalProjects = [
+  {
+    name: 'Portfolio 3D',
+    description:
+      'My 3D portfolio project is a realization with Reactjs and Threejs. It presents my skills in web development by offering an immersive and interactive user experience. The project allows visitors to navigate in a 3D environment and discover my professional and personal projects in the form of 3D models.',
+    tags: [
+      {
+        name: 'reactjs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwindcss',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'threejs',
+        color: 'red-text-gradient',
+      },
+    ],
+    image:
+      'https://images.takeshape.io/4d46e476-8704-42c4-8d0d-06ebdd0e3c93/dev/dc827c73-0d21-4602-baaf-7f2ee4ec60f0/ThreeJS%20%2B%20React2.png?auto=compress%2Cformat',
+    source_code_link:
+      'https://github.com/Vladimir9595/3D-Portfolio/blob/main/README.md',
+  },
+  {
+    name: 'CDN',
+    description:
+      'The CDN (Content Delivery Network) project consists of setting up a content delivery network infrastructure. The objective is to optimize the performance of web content delivery by distributing files to several servers located in different geographical areas. Users can thus access content quickly.',
+    tags: [
+      {
+        name: 'cdn',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'php',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'documentation',
+        color: 'red-text-gradient',
+      },
+    ],
+    image: 'https://cdn.vladimir-portfolio.com/shared/images/logo_cdn.png',
+    source_code_link: 'https://github.com/Vladimir9595/CDN/blob/main/README.md',
   },
 ]
 
@@ -420,61 +606,31 @@ const news = [
   {
     name: 'Vite.js Tutorial',
     description:
-      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+      'Vite.js is a fast development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
     image:
       'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
     source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
-    published_at: 'Apr 6, 2022',
+    published_at: 'Avr 6, 2022',
     read: 'Read more...',
   },
   {
-    name: 'Vite.js Tutorial',
+    name: 'Rsync documentation',
     description:
-      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
-    image:
-      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
-    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
-    published_at: 'Apr 6, 2022',
+      'Rsync (for remote synchronization) is a file synchronization software. It is frequently used to set up remote backup systems or system restore points',
+    image: 'https://unihost.com/help/wp-content/uploads/using-rsync-linux.jpg',
+    source_link: 'https://doc.ubuntu-fr.org/rsync',
+    published_at: 'Fev 20, 2023',
     read: 'Read more...',
   },
   {
-    name: 'Vite.js Tutorial',
+    name: 'React.js Routing',
     description:
-      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+      'The article I checked out on React.js Routing is a handy resource for understanding the basics of setting up routes in a web application with React.js. It discusses the different routing methods and their respective benefits.',
     image:
-      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
-    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
-    published_at: 'Apr 6, 2022',
-    read: 'Read more...',
-  },
-  {
-    name: 'Vite.js Tutorial',
-    description:
-      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
-    image:
-      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
-    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
-    published_at: 'Apr 6, 2022',
-    read: 'Read more...',
-  },
-  {
-    name: 'Vite.js Tutorial',
-    description:
-      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
-    image:
-      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
-    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
-    published_at: 'Apr 6, 2022',
-    read: 'Read more...',
-  },
-  {
-    name: 'Vite.js Tutorial',
-    description:
-      'Vite.js is a rapid development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
-    image:
-      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
-    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
-    published_at: 'Apr 6, 2022',
+      'https://res.cloudinary.com/practicaldev/image/fetch/s--_cPqsQW---/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kzhqskruy0lrpso8vaoj.png',
+    source_link:
+      'https://reactrouter.com/en/main/routers/create-browser-router',
+    published_at: 'Sep 8, 2022',
     read: 'Read more...',
   },
 ]
@@ -488,6 +644,8 @@ export {
   experiences,
   mentions,
   schools,
-  projects,
+  schoolProjects,
+  workProjects,
+  personalProjects,
   news,
 }
