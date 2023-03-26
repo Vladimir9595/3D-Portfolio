@@ -15,21 +15,34 @@
 
 .hash-span {
   margin-top: -100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   display: block;
 }
 
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #434343,
+    to bottom #434343,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
+    to bottom,
     #434343,
     #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.black-gradient1 {
+  background: #434343; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #000000,
+    #434343
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #434343
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -144,6 +157,11 @@
   text-indent: -9999em;
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
+}
+
+#root > div > div:nth-child(1) > section > div:nth-child(2) > div {
+  position: initial !important;
+  margin-top: -30px !important;
 }
 
 @keyframes mulShdSpin {

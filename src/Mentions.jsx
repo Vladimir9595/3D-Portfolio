@@ -3,7 +3,7 @@ import { Navbar, Mention, Footer } from './components'
 const Mentions = () => {
   return (
     <div className="relative z-0 white-gradient">
-      <div style={{ paddingBottom: 100 }}>
+      <div className="my-20">
         <Navbar />
       </div>
       <Mention />

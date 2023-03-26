@@ -1,12 +1,15 @@
-import { Navbar, Tech, Footer } from './components'
+import { Navbar, Tech, StarsCanvas, Footer } from './components'
 
 const Technologies = () => {
   return (
     <div className="relative z-0 white-gradient">
-      <div style={{ paddingBottom: 100 }}>
+      <div className="my-20">
         <Navbar />
       </div>
-      <Tech />
+      <div className="relative z-0">
+        <Tech />
+        <StarsCanvas />
+      </div>
       <Footer />
     </div>
   )
