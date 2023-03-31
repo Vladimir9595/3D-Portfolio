@@ -21,9 +21,8 @@ const About = () => {
         developer for the maintenance and management of sites. <br /> I'm
         currently working for a BTS SIO within the CCS - SAT Clients belonging
         to the Crédit Mutuel Alliance Fédérale group. <br /> I continue my
-        professional and professional and personal development through
-        self-training on programming languages on programming languages and new
-        technologies.
+        professional and personal development through self-training on
+        programming languages on programming languages and new technologies.
       </motion.p>
     </>
   )
