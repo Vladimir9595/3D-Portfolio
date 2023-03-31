@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const currentRoute = window.location.pathname
 
-    if (currentRoute === '/3D-Portfolio') {
+    if (currentRoute === '/') {
       let active = localStorage.getItem('active') ?? 'null'
       setActive(active)
       document
@@ -24,6 +24,10 @@ const Navbar = () => {
       setActive(route)
     }
   }, [])
+
+  //   if (typeof window !== 'undefined') {
+  //     localStorage.setItem('technologies', 'Techs')
+  //   }
 
   return (
     <nav
@@ -39,7 +43,11 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-10 h-10 object-contain border-solid border-1 border-[#1E90FF] rounded-lg"
+          />
           <p className="text-white text-[17px] font-bold cursor-pointer sm:block hidden">
             Vladimir&nbsp;| Sacchetto
           </p>

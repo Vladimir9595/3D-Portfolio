@@ -7,12 +7,12 @@ import {
 } from 'react-router-dom'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import Technologies from './Technologies'
-import Articles from './Articles'
-import Projs from './Proj'
-import Mentions from './Mentions'
-import Error404 from './Error404'
+import App from './views/App'
+import Technologies from './views/Technologies'
+import Articles from './views/Articles'
+import Projs from './views/Proj'
+import Mentions from './views/Mentions'
+import Error404 from './views/errors/Error404'
 import './index.css'
 
 const router = createBrowserRouter(
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       <Route path="*" element={<Error404 />} />
     </>,
   ),
-  { basename: '/3D-Portfolio' },
+  { basename: '/' },
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
