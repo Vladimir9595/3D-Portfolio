@@ -5,8 +5,8 @@ import About from './About'
 import Tech from './Tech'
 import School from './School'
 import Experience from './Experience'
-import Projects from './Projects'
-import News from './News'
+import ProjectCard from './ProjectCard'
+import NewCard from './NewCard'
 import Contact from './Contact'
 import Mention from './Mention'
 import Footer from './Footer'
@@ -19,8 +19,8 @@ export {
   Tech,
   School,
   Experience,
-  Projects,
-  News,
+  ProjectCard,
+  NewCard,
   Contact,
   Mention,
   Footer,
