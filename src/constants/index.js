@@ -85,17 +85,13 @@ const programming = [
     name: 'Python',
     icon: python,
   },
-  {
-    name: 'Laravel',
-    icon: laravel,
-  },
   //   {
   //     name: 'Android',
   //     icon: android,
   //   },
 ]
 
-const front = [
+const framework = [
   {
     name: 'React JS',
     icon: reactjs,
@@ -103,6 +99,10 @@ const front = [
   {
     name: 'Tailwind CSS',
     icon: tailwind,
+  },
+  {
+    name: 'Laravel',
+    icon: laravel,
   },
   //   {
   //     name: 'Bootstrap',
@@ -130,26 +130,22 @@ const back = [
 ]
 
 const devops = [
-  {
-    name: 'Linux',
-    icon: linux,
-  },
+  //   {
+  //     name: 'Linux',
+  //     icon: linux,
+  //   },
   //   {
   //     name: 'Windows',
   //     icon: windows,
   //   },
-  {
-    name: 'Bash',
-    icon: bash,
-  },
-  {
-    name: 'Docker',
-    icon: docker,
-  },
-  {
-    name: 'Git',
-    icon: git,
-  },
+  //   {
+  //     name: 'Bash',
+  //     icon: bash,
+  //   },
+  //   {
+  //     name: 'Docker',
+  //     icon: docker,
+  //   },
   //   {
   //     name: 'VirtualBox',
   //     icon: virtualbox,
@@ -164,6 +160,10 @@ const softwares = [
   {
     name: 'Figma',
     icon: figma,
+  },
+  {
+    name: 'Git',
+    icon: git,
   },
   //   {
   //     name: 'Photoshop',
@@ -214,29 +214,17 @@ const mentions = [
 
 const experiences = [
   {
-    title: 'IT Technical Support',
-    company_name: 'CCS',
-    icon: ccs,
-    iconBg: '#E6DEDD',
-    date: 'Sept 2021 - Present',
-    points: [
-      'Work-study contract within the SAT-Client belonging to the CCS of the Crédit Mutuel Alliance Fédérale group in Strasbourg.',
-      'Main role: provide assistance to professional users for their remote banking space.',
-      'Ensure the follow-up of remote banking files (classic transfers, confidential transfers, direct debits).',
-      'Helping users to navigate their online banking space and ensuring the rapid and secure transmission of their financial data.',
-    ],
-  },
-  {
-    title: 'Specialized Educator',
-    company_name: 'Adèle de Glaubitz',
-    icon: glaubitz,
+    title: 'Service Civique',
+    company_name: 'Service Civique',
+    icon: service,
     iconBg: '#383E56',
-    date: 'April 2018 - Sept 2021',
+    date: 'Oct 2014 - July 2015',
+    dateColor: '#373737',
     points: [
-      'Work with two different groups: a group of 12 children aged 5-12 and a group of 13 teenage girls aged 11-17.',
-      'Participate in the daily life of these groups by accompanying them in their academic, social and emotional life.',
-      'Setting up personalized projects adapted to the individual needs of the children and teenagers.',
-      'Accompaniment for the teenagers in their professional orientation by bringing them an educational and psychological support to help them to build themselves and to project themselves towards their future.',
+      'Participation in the Service Civique project as a volunteer.',
+      'Accompaniment to a public of disabled people in their daily life within different living groups of the IME of the Sonnenhof Foundation.',
+      'Main role : propose and organize various activities throughout the volunteer service.',
+      'Develop skills in social support and teamwork.',
     ],
   },
   {
@@ -253,22 +241,66 @@ const experiences = [
     ],
   },
   {
-    title: 'Service Civique',
-    company_name: 'Service Civique',
-    icon: service,
+    title: 'Specialized Educator',
+    company_name: 'Adèle de Glaubitz',
+    icon: glaubitz,
     iconBg: '#383E56',
-    date: 'Oct 2014 - July 2015',
-    dateColor: '#373737',
+    date: 'April 2018 - Sept 2021',
     points: [
-      'Participation in the Service Civique project as a volunteer.',
-      'Accompaniment to a public of disabled people in their daily life within different living groups of the IME of the Sonnenhof Foundation.',
-      'Main role : propose and organize various activities throughout the volunteer service.',
-      'Develop skills in social support and teamwork.',
+      'Work with two different groups: a group of 12 children aged 5-12 and a group of 13 teenage girls aged 11-17.',
+      'Participate in the daily life of these groups by accompanying them in their academic, social and emotional life.',
+      'Setting up personalized projects adapted to the individual needs of the children and teenagers.',
+      'Accompaniment for the teenagers in their professional orientation by bringing them an educational and psychological support to help them to build themselves and to project themselves towards their future.',
+    ],
+  },
+  {
+    title: 'IT Technical Support',
+    company_name: 'CCS',
+    icon: ccs,
+    iconBg: '#E6DEDD',
+    date: 'Sept 2021 - Present',
+    points: [
+      'Work-study contract within the SAT-Client belonging to the CCS of the Crédit Mutuel Alliance Fédérale group in Strasbourg.',
+      'Main role: provide assistance to professional users for their remote banking space.',
+      'Ensure the follow-up of remote banking files (classic transfers, confidential transfers, direct debits).',
+      'Helping users to navigate their online banking space and ensuring the rapid and secure transmission of their financial data.',
     ],
   },
 ]
 
 const schools = [
+  {
+    title: "Bachelor's degree",
+    company_name: 'ITES Pitagora',
+    icon: pitagora,
+    iconBg: '#383E56',
+    date: 'Sept 2009 - July 2014',
+    points: [
+      'Italian language and literature.',
+      'English language and literature.',
+      'French language and literature.',
+      'History.',
+      'Mathematics.',
+      'Law and Economics.',
+      'Information technology for business.',
+      'Business Administration.',
+      'Political Economy.',
+    ],
+  },
+  {
+    title: 'Medical and Psychological Assistance',
+    company_name: 'IFCAAD Schiltigheim',
+    icon: ifcaad,
+    iconBg: '#E6DEDD',
+    date: 'October 2015 - May 2017',
+    points: [
+      'Accompany the person in the essential acts of daily life.',
+      'Respect for the person and the rules of hygiene and safety.',
+      'Accompaniment in social and relational life.',
+      'Positioning as a social worker in the context of intervention.',
+      'Work in a multi-professional team, risk management and processing of information related to the support.',
+    ],
+  },
   {
     title: 'Superior Technical Bachelor',
     company_name: 'CCI Campus Strasbourg',
@@ -288,41 +320,53 @@ const schools = [
       'Programming languages: HTML, CSS, JS, PHP, MYSQL, KOTLIN',
     ],
   },
-  {
-    title: 'Medical and Psychological Assistance',
-    company_name: 'IFCAAD Schiltigheim',
-    icon: ifcaad,
-    iconBg: '#E6DEDD',
-    date: 'October 2015 - May 2017',
-    points: [
-      'Accompany the person in the essential acts of daily life.',
-      'Respect for the person and the rules of hygiene and safety.',
-      'Accompaniment in social and relational life.',
-      'Positioning as a social worker in the context of intervention.',
-      'Work in a multi-professional team, risk management and processing of information related to the support.',
-    ],
-  },
-  {
-    title: "Bachelor's degree",
-    company_name: 'ITES Pitagora',
-    icon: pitagora,
-    iconBg: '#383E56',
-    date: 'Sept 2009 - July 2014',
-    points: [
-      'Italian language and literature.',
-      'English language and literature.',
-      'French language and literature.',
-      'History.',
-      'Mathematics.',
-      'Law and Economics.',
-      'Information technology for business.',
-      'Business Administration.',
-      'Political Economy.',
-    ],
-  },
 ]
 
 const schoolProjects = [
+  {
+    name: 'CCI Restiloc - Technical Documentation',
+    description:
+      'I have produced a technical documentation explaining all the technical parts concerning the CCI Restiloc project of our AP4. This documentation is intended for users who wish to install the project for technical and functional use.',
+    tags: [
+      {
+        name: 'kotlin',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mysql',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'laravel',
+        color: 'red-text-gradient',
+      },
+    ],
+    image: 'https://cdn.vladimir-portfolio.com/shared/images/restiloc_logo.png',
+    source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-restiloc_doc_technique.pdf',
+  },
+  {
+    name: 'CCI Restiloc - User Documentation',
+    description:
+      'I have created a user documentation explaining all the functionalities of the CCI Restiloc platform of our AP4. This documentation is intended for users who wish to interact with the web application.',
+    tags: [
+      {
+        name: 'kotlin',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mysql',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'laravel',
+        color: 'red-text-gradient',
+      },
+    ],
+    image: 'https://cdn.vladimir-portfolio.com/shared/images/restiloc_logo.png',
+    source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-restiloc_doc_utilisateur.pdf',
+  },
   {
     name: 'CCI APPRO - Technical Documentation',
     description:
@@ -343,8 +387,7 @@ const schoolProjects = [
     ],
     image:
       'https://cdn.vladimir-portfolio.com/shared/images/logo_ccicampus_appro.png',
-    source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-campus_doc_technique.pdf',
+    source_code_link: '',
   },
   {
     name: 'CCI APPRO - User Documentation',
@@ -482,6 +525,28 @@ const schoolProjects = [
       'https://adeo-informatique.fr/wp-content/uploads/2018/11/pfSense-logo_ok.png',
     source_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_PF_Sense.pdf',
+  },
+  {
+    name: 'Laravel Portfolio',
+    description:
+      'During my both years of BTS, I made my first version portfolio. This portfolio was made with Laravel framework. I used the Laravel framework to make the back-end and the Scss framework to make the front-end. I also used the Tailwind CSS framework to make some the design of the website. I invite you to click on the link in order to see my portfolio. Have a nice reading.',
+    tags: [
+      {
+        name: 'portfolio',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mysql',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'laravel',
+        color: 'red-text-gradient',
+      },
+    ],
+    image: 'https://cdn.vladimir-portfolio.com/shared/images/laravel_logo.png',
+    source_code_link:
+      'https://github.com/Vladimir9595/CCI-SIO21-Portfolio/blob/main/README.md',
   },
 ]
 
@@ -633,11 +698,41 @@ const news = [
     published_at: 'Sep 8, 2022',
     read: 'Read more...',
   },
+  {
+    name: 'Install React in Laravel 9 with Vite',
+    description:
+      'In this article, we will learn how to install React js 3 in laravel 9.19 with vite. This article shows how to install React in laravel 9. You will be able to create a React and Laravel 9.19 application powered by vite.',
+    image:
+      'https://dm86im8vci8bx.cloudfront.net/blog/banner/30261657708842.jpg',
+    source_link:
+      'https://techvblogs.com/blog/how-to-install-react-in-laravel-9-with-vite',
+    published_at: 'Sep, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'Preferences Visual Studio Code',
+    description:
+      'In this tutorial, Grafikart proposes to discover its configuration on Visual Studio Code. It edits in particular the settings.json file to customize the interface and the features of the editor.',
+    image: 'https://biolibre.fr/images/articles/visual_studio_code.jpeg',
+    source_link: 'https://grafikart.fr/tutoriels/vscode-settings-2096',
+    published_at: 'Nov, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'PHP Object Oriented Programming',
+    description:
+      'In this article, we will learn how to program in PHP in an object-oriented way. We will see the concepts of classes, objects, inheritance, interfaces, abstract classes, etc.',
+    image:
+      'https://blog.nicolashachet.com/wp-content/uploads/2013/02/Php-POO.jpg',
+    source_link: 'https://www.bgmp.fr/la-programmation-orientee-objet-en-php/',
+    published_at: 'Jul 8, 2020',
+    read: 'Read more...',
+  },
 ]
 
 export {
   programming,
-  front,
+  framework,
   back,
   devops,
   softwares,
