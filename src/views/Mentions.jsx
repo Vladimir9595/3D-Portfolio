@@ -1,4 +1,4 @@
-import { Navbar, Mention, Footer } from './components'
+import { Navbar, Mention, Footer } from '../components'
 
 const Mentions = () => {
   return (

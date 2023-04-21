@@ -7,7 +7,7 @@ import {
   Navbar,
   StarsCanvas,
   Footer,
-} from './components'
+} from '../components'
 
 const App = () => {
   return (

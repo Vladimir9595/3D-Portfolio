@@ -20,8 +20,16 @@ const Footer = () => {
   useEffect(() => {
     const currentRoute = window.location.pathname
 
-    let route = currentRoute.slice(14)
-    setActive(route)
+    if (currentRoute === '/') {
+      let active = localStorage.getItem('active') ?? 'null'
+      setActive(active)
+      document
+        .querySelector(`#${active}`)
+        ?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      let route = currentRoute.slice(14)
+      setActive(route)
+    }
   }, [])
 
   useEffect(() => {
@@ -34,6 +42,11 @@ const Footer = () => {
     localStorage.setItem('active', iconName)
   }
 
+  const handleTitleClick = (title) => {
+    setActive(title)
+    localStorage.setItem('active', title)
+  }
+
   return (
     <footer
       className={`${styles.paddingX} w-full flex items-center py-5 z-20 black-gradient`}
@@ -41,7 +54,7 @@ const Footer = () => {
       <div className="w-full flex justify-center gap-3 justify-around max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
           <span className="text-white lg:text-[18px] sm:text-[15px] xs:text-[14px] text-[12px] lg:leading-[25px] font-semibold flex">
-            © Vladimir Sacchetto; {year}
+            © {year} Vladimir Sacchetto
           </span>
         </div>
         <span className="text-white lg:text-[18px] sm:text-[15px] xs:text-[14px] text-[12px] lg:leading-[25px] font-semibold flex sm:block hidden">
@@ -55,7 +68,15 @@ const Footer = () => {
                 active === link.id ? 'text-white' : 'text-secondary'
               } hover:text-white lg:text-[18px] sm:text-[15px] xs:text-[14px] text-[12px] lg:leading-[25px] font-medium cursor-pointer`}
             >
-              <Link to={link.external ? `/${link.id}` : `/#${link.id}`}>
+              <Link
+                to={link.external ? `/${link.id}` : `/#${link.id}`}
+                onClick={() => {
+                  handleTitleClick(link.title)
+                  setActive(link.id)
+                  localStorage.setItem('active', link.id)
+                  window.scrollTo(0, 0)
+                }}
+              >
                 {link.title}
               </Link>
             </li>
@@ -81,7 +102,7 @@ const Footer = () => {
             onClick={() =>
               handleIconClick(
                 'linkedin',
-                'https://www.linkedin.com/in/vladimir-sacchetto-16642b116/?locale=fr_FR',
+                'https://www.linkedin.com/in/vladimir-sacchetto',
               )
             }
           >

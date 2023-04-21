@@ -1,4 +1,4 @@
-import { Navbar, NotFound, StarsCanvas, Footer } from './components'
+import { Navbar, NotFound, StarsCanvas, Footer } from '/src/components'
 
 const Error404 = () => {
   return (

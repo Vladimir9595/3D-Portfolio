@@ -1,13 +1,13 @@
-import { Navbar, News, StarsCanvas, Footer } from './components'
+import { Navbar, Tech, StarsCanvas, Footer } from '../components'
 
-const Articles = () => {
+const Technologies = () => {
   return (
     <div className="relative z-0 white-gradient">
       <div className="my-20">
         <Navbar />
       </div>
       <div className="relative z-0">
-        <News />
+        <Tech />
         <StarsCanvas />
       </div>
       <Footer />
@@ -15,4 +15,4 @@ const Articles = () => {
   )
 }
 
-export default Articles
+export default Technologies

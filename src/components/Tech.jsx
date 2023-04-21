@@ -3,7 +3,7 @@ import { styles } from '../styles'
 
 import { BallCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
-import { programming, front, back, devops, softwares } from '../constants'
+import { programming, framework, back, devops, softwares } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
 const Tech = () => {
@@ -13,17 +13,17 @@ const Tech = () => {
       items: programming,
     },
     {
-      title: 'Frontend',
-      items: front,
+      title: 'Framework',
+      items: framework,
     },
     {
       title: 'Backend',
       items: back,
     },
-    {
-      title: 'DevOps',
-      items: devops,
-    },
+    // {
+    //   title: 'DevOps',
+    //   items: devops,
+    // },
     {
       title: 'Softwares',
       items: softwares,
@@ -38,7 +38,7 @@ const Tech = () => {
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mb-5 text-[#373737] text-justify sm:text-[18px] text-[15px] leading-[30px]"
+        className="mb-5 text-[#373737] text-justify sm:text-[18px] text-[13px] leading-[30px]"
       >
         In this section, I will present the technologies that I acquired during
         my BTS training, as well as those that I learned on my own. <br /> To

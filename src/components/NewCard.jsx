@@ -1,10 +1,7 @@
 import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 
-import { styles } from '../styles'
-import { SectionWrapper } from '../hoc'
-import { news } from '../constants'
-import { fadeIn, textVariant } from '../utils/motion'
+import { fadeIn } from '../utils/motion'
 
 const NewCard = ({
   index,
@@ -52,32 +49,4 @@ const NewCard = ({
   )
 }
 
-const News = () => {
-  return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>what I consulted</p>
-        <h2 className={styles.sectionHeadText}>News</h2>
-      </motion.div>
-
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
-          className="mt-3 text-[#373737] text-justify sm:text-[18px] text-[15px] max-w-3xl leading-[30px]"
-        >
-          In this section, I present you some articles that have contributed to
-          the formation of my technical baggage. <br /> Some of these articles
-          have helped me acquire key skills in my field of expertise.
-        </motion.p>
-      </div>
-
-      <div className="mt-10 flex flex-wrap gap-7">
-        {news.map((article, index) => (
-          <NewCard key={`article-${index}`} index={index} {...article} />
-        ))}
-      </div>
-    </>
-  )
-}
-
-export default SectionWrapper(News, 'news')
+export default NewCard
