@@ -159,6 +159,11 @@
   transform: translateZ(0);
 }
 
+/* Div relative pour Canvas
+#root > div > div:nth-child(2) > div {
+  display: none !important;
+} */
+
 #root > div > div:nth-child(1) > section > div:nth-child(2) > div {
   position: initial !important;
   margin-top: -30px !important;
