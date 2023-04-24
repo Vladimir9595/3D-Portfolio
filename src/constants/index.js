@@ -387,7 +387,8 @@ const schoolProjects = [
     ],
     image:
       'https://cdn.vladimir-portfolio.com/shared/images/logo_ccicampus_appro.png',
-    source_code_link: '',
+    source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-campus_doc_technique.pdf',
   },
   {
     name: 'CCI APPRO - User Documentation',
