@@ -344,6 +344,7 @@ const schoolProjects = [
     image: 'https://cdn.vladimir-portfolio.com/shared/images/restiloc_logo.png',
     source_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/cci-restiloc_doc_technique.pdf',
+    project_code_link: 'https://github.com/Restiloc',
   },
   {
     name: 'CCI Restiloc - User Documentation',
@@ -366,6 +367,7 @@ const schoolProjects = [
     image: 'https://cdn.vladimir-portfolio.com/shared/images/restiloc_logo.png',
     source_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/cci-restiloc_doc_utilisateur.pdf',
+    project_code_link: 'https://github.com/Restiloc',
   },
   {
     name: 'CCI APPRO - Technical Documentation',
@@ -389,6 +391,7 @@ const schoolProjects = [
       'https://cdn.vladimir-portfolio.com/shared/images/logo_ccicampus_appro.png',
     source_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/cci-campus_doc_technique.pdf',
+    project_code_link: 'https://github.com/CCI-Campus',
   },
   {
     name: 'CCI APPRO - User Documentation',
@@ -412,6 +415,7 @@ const schoolProjects = [
       'https://cdn.vladimir-portfolio.com/shared/images/logo_ccicampus_appro.png',
     source_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/cci-campus_doc_utilisateur.pdf',
+    project_code_link: 'https://github.com/CCI-Campus',
   },
   {
     name: 'Word Press article',
@@ -435,6 +439,8 @@ const schoolProjects = [
       'https://ih1.redbubble.net/image.541875930.4233/st,small,507x507-pad,600x600,f8f8f8.u6.jpg',
     source_code_link:
       'https://btssio-ccicampus-strasbourg.fr/formulaire_html_et_traitement_en_php/',
+    project_code_link:
+      'https://btssio-ccicampus-strasbourg.fr/formulaire_html_et_traitement_en_php/',
   },
   {
     name: 'Word Press article',
@@ -455,14 +461,16 @@ const schoolProjects = [
       },
     ],
     image:
-      'https://programadoresbrasil.com.br/wp-content/uploads/2020/02/Introduction-to-HTML-and-CSS-for-Beginners-Hafiza-Rabbia-Shafiq.jpg',
+      'https://btssio-ccicampus-strasbourg.fr/wp-content/uploads/2022/04/HTML5.png',
     source_code_link:
+      'https://btssio-ccicampus-strasbourg.fr/quest-ce-que-le-bts-sio/',
+    project_code_link:
       'https://btssio-ccicampus-strasbourg.fr/quest-ce-que-le-bts-sio/',
   },
   {
     name: 'Business Continuity Plan',
     description:
-      'This work consisted in the realization of a situation around the BCP (Business Continuity Plan). Within a client company, my work consists, under the responsibility of the system and network administrator, to participate in the design, installation, parameter setting and exploitation of the information system of the company. Starting with an expression of needs, I elaborated a technical offer answering all the requirements.',
+      'This work consisted in the realization of a situation around the BCP (Business Continuity Plan). Under the responsibility of the system and network administrator, I have to participate in the design, installation, parameter setting and exploitation of the information system of the company.',
     tags: [
       {
         name: 'work',
@@ -480,6 +488,8 @@ const schoolProjects = [
     image:
       'https://www.wysiwyg.fr/wp-content/uploads/2021/12/F36-1-768x535.png',
     source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solution_PCA.pdf',
+    project_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solution_PCA.pdf',
   },
   {
@@ -502,6 +512,8 @@ const schoolProjects = [
     ],
     image: 'https://myosotis.fr/wp-content/uploads/2017/04/pca-pra-1.png',
     source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
+    project_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
   },
   {
@@ -526,6 +538,8 @@ const schoolProjects = [
       'https://adeo-informatique.fr/wp-content/uploads/2018/11/pfSense-logo_ok.png',
     source_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_PF_Sense.pdf',
+    project_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_PF_Sense.pdf',
   },
   {
     name: 'Laravel Portfolio',
@@ -548,6 +562,7 @@ const schoolProjects = [
     image: 'https://cdn.vladimir-portfolio.com/shared/images/laravel_logo.png',
     source_code_link:
       'https://github.com/Vladimir9595/CCI-SIO21-Portfolio/blob/main/README.md',
+    project_code_link: 'https://github.com/Vladimir9595/CCI-SIO21-Portfolio',
   },
 ]
 
@@ -572,7 +587,9 @@ const workProjects = [
     ],
     image: 'https://cdn.vladimir-portfolio.com/shared/images/CM_CIC.jpg',
     source_code_link:
-      ' https://cdn.vladimir-portfolio.com/shared/pdf/Assistance technique pour la Banque à distance (BAD).pdf',
+      'https://cdn.vladimir-portfolio.com/shared/pdf/Assistance technique pour la Banque à distance (BAD).pdf',
+    project_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/Assistance technique pour la Banque à distance (BAD).pdf',
   },
   {
     name: 'Software solution HBS',
@@ -594,7 +611,9 @@ const workProjects = [
     ],
     image: 'https://i.ytimg.com/vi/-5MWtSwYZK0/maxresdefault.jpg',
     source_code_link:
-      ' https://cdn.vladimir-portfolio.com/shared/pdf/Aide et accompagnement dans la solution logicielle HBS.pdf',
+      'https://cdn.vladimir-portfolio.com/shared/pdf/Aide et accompagnement dans la solution logicielle HBS.pdf',
+    project_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/Aide et accompagnement dans la solution logicielle HBS.pdf',
   },
   {
     name: 'Professional interview',
@@ -617,6 +636,8 @@ const workProjects = [
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYRS-wpAG0tfAlhQSBlvVfmmSntuWoQ7TUg&usqp=CAU',
     source_code_link:
+      'https://cdn.vladimir-portfolio.com/shared/pdf/Entretien professionnel individuel.pdf',
+    project_code_link:
       'https://cdn.vladimir-portfolio.com/shared/pdf/Entretien professionnel individuel.pdf',
   },
 ]
@@ -644,6 +665,7 @@ const personalProjects = [
       'https://images.takeshape.io/4d46e476-8704-42c4-8d0d-06ebdd0e3c93/dev/dc827c73-0d21-4602-baaf-7f2ee4ec60f0/ThreeJS%20%2B%20React2.png?auto=compress%2Cformat',
     source_code_link:
       'https://github.com/Vladimir9595/3D-Portfolio/blob/main/README.md',
+    project_code_link: 'https://github.com/Vladimir9595/3D-Portfolio',
   },
   {
     name: 'CDN',
@@ -665,6 +687,7 @@ const personalProjects = [
     ],
     image: 'https://cdn.vladimir-portfolio.com/shared/images/logo_cdn.png',
     source_code_link: 'https://github.com/Vladimir9595/CDN/blob/main/README.md',
+    project_code_link: 'https://github.com/Vladimir9595/CDN',
   },
 ]
 
