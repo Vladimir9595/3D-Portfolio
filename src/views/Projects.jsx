@@ -1,10 +1,10 @@
 import { Navbar, ProjectCard, StarsCanvas, Footer } from '../components'
 import { schoolProjects, workProjects, personalProjects } from '../constants'
 import { motion } from 'framer-motion'
+import React, { useEffect, useState } from 'react'
 
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
-
 
 const Projects = () => {
   const projects = [
@@ -21,6 +21,23 @@ const Projects = () => {
       items: personalProjects,
     },
   ]
+
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 600px)')
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches)
+    }
+
+    setIsMobile(mediaQuery.matches)
+    mediaQuery.addEventListener('change', handleMediaQueryChange)
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+    }
+  }, [])
 
   return (
     <div className="relative z-0 white-gradient">
@@ -65,7 +82,22 @@ const Projects = () => {
             </div>
           ))}
         </div>
-
+        <div className="absolute sm:bottom-[15px] bottom-[10px] sm:right-10 right-5">
+          <a href="#">
+            <div className="w-[25px] sm:w-[50px] sm:h-[50px] h-[25px] sm:rounded-3xl rounded-full sm:border-4 border-2 border-[#373737] flex justify-center items-start p-2">
+              <motion.div
+                animate={{
+                  y: isMobile ? [0, 3, 0] : [0, 15, 0],
+                }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                }}
+                className="sm:w-3 sm:h-3 w-1 h-1 rounded-full bg-[#373737] mb-1"
+              />
+            </div>
+          </a>
+        </div>
         <StarsCanvas />
       </div>
       <Footer />
