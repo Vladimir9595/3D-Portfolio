@@ -14,6 +14,15 @@ const ProjectCard = ({
   source_code_link,
   project_code_link,
 }) => {
+  const openSourceCodeLink = () => {
+    console.log(source_code_link)
+    window.open(source_code_link, '_blank')
+  }
+
+  const openProjectCodeLink = () => {
+    console.log(project_code_link)
+    window.open(project_code_link, '_blank')
+  }
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
@@ -30,27 +39,32 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer "
-            >
-              <div className="white-gradient w-7 h-7 rounded-full flex justify-center items-center cursor-pointer ">
-                <img src={cdn} alt="cdn" className="w-5 h-5 object-contain" />
+          <div className="absolute inset-0">
+            <div className="m-3 card-img_hover">
+              <div
+                onClick={openSourceCodeLink}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <div className="white-gradient w-7 h-7 rounded-full flex justify-center items-center cursor-pointer ">
+                  <img src={cdn} alt="cdn" className="w-5 h-5 object-contain" />
+                </div>
               </div>
             </div>
           </div>
-          <div className="absolute inset-0 flex justify-start m-3 card-img_hover">
-            <div
-              onClick={() => window.open(project_code_link, '_blank')}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer "
-            >
-              <div className="white-gradient w-7 h-7 rounded-full flex justify-center items-center cursor-pointer ">
-                <img src={git} alt="git" className="w-5 h-5 object-contain" />
+          <div className="absolute inset-0 sm:ml-[16rem] ml-[12.5rem]">
+            <div className="m-3 card-img_hover">
+              <div
+                onClick={openProjectCodeLink}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <div className="white-gradient w-7 h-7 rounded-full flex justify-center items-center cursor-pointer ">
+                  <img src={git} alt="git" className="w-5 h-5 object-contain" />
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-justify text-[14px]">
