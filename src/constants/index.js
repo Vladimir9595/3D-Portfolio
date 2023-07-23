@@ -693,13 +693,23 @@ const personalProjects = [
 
 const news = [
   {
-    name: 'Vite.js Tutorial',
+    name: 'Laravel Eloquent ORM',
     description:
-      'Vite.js is a fast development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+      'The Eloquent ORM included with Laravel provides a beautiful, simple ActiveRecord implementation for working with your database. Each database table has a corresponding "Model" which is used to interact with that table.',
     image:
-      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
-    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
-    published_at: 'Avr 6, 2022',
+      'https://grafikart.fr/uploads/attachments/2023/laravel-eloquent-6426f92444ea0127887452.jpg',
+    source_link: 'https://stitcher.io/blog/eloquent-mysql-views',
+    published_at: 'Aug 27, 2018',
+    read: 'Read more...',
+  },
+  {
+    name: 'How to use GitHub',
+    description:
+      'GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management.',
+    image:
+      'https://www.lebigdata.fr/wp-content/uploads/2021/03/DataLab_-_Chapitre_0_-_Fabriquer_sa_station_de_mesure_connect_e_github-logo-640x320-1.png',
+    source_link: 'https://www.lebigdata.fr/github-tout-savoir',
+    published_at: 'Mar 9, 2022',
     read: 'Read more...',
   },
   {
@@ -709,6 +719,77 @@ const news = [
     image: 'https://unihost.com/help/wp-content/uploads/using-rsync-linux.jpg',
     source_link: 'https://doc.ubuntu-fr.org/rsync',
     published_at: 'Fev 20, 2023',
+    read: 'Read more...',
+  },
+  {
+    name: 'Preferences Visual Studio Code',
+    description:
+      'In this tutorial, Grafikart proposes to discover its configuration on Visual Studio Code. It edits in particular the settings.json file to customize the interface and the features of the editor.',
+    image: 'https://biolibre.fr/images/articles/visual_studio_code.jpeg',
+    source_link: 'https://grafikart.fr/tutoriels/vscode-settings-2096',
+    published_at: 'Nov, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'PHP Object Oriented Programming',
+    description:
+      'In this article, we will learn how to program in PHP in an object-oriented way. We will see the concepts of classes, objects, inheritance, interfaces, abstract classes, etc.',
+    image:
+      'https://blog.nicolashachet.com/wp-content/uploads/2013/02/Php-POO.jpg',
+    source_link: 'https://www.bgmp.fr/la-programmation-orientee-objet-en-php/',
+    published_at: 'Jul 8, 2020',
+    read: 'Read more...',
+  },
+  {
+    name: 'Setting up a CRUD',
+    description:
+      'In this article, we will learn how to setting up a CRUD. CRUD is a computer acronym related to the operation of stored data. It encompasses four basic operations : Create, Read, Update and Delete.',
+    image:
+      'https://i0.wp.com/datascientest.com/wp-content/uploads/2022/10/CRUD.png?fit=800%2C439&ssl=1',
+    source_link:
+      'https://appmaster.io/fr/blog/operations-de-crud-quest-ce-que-le-crud',
+    published_at: 'Mar 21, 2023',
+    read: 'Read more...',
+  },
+  {
+    name: 'SSL certificate',
+    description:
+      'An SSL certificate is a data file that links a cryptographic key to an organisation\'s information. The certificate activates the padlock and the "https" protocol to ensure a secure connection between the web server and the browser.',
+    image: 'https://www.znetlive.com/blog/wp-content/uploads/2019/01/SSL.png',
+    source_link:
+      'https://www.verisign.com/en_US/website-presence/online/ssl-certificates/index.xhtml',
+    published_at: 'Feb 17, 2021',
+    read: 'Read more...',
+  },
+  {
+    name: 'What is a Firewall',
+    description:
+      'A firewall is a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules.',
+    image:
+      'https://static.vecteezy.com/ti/vettori-gratis/p3/600578-icona-del-firewall-di-rete-illustrazione-su-sfondo-bianco-vettoriale.jpg',
+    source_link:
+      'https://www.axis-solutions.fr/quest-ce-quun-pare-feu-et-quel-est-son-role/',
+    published_at: 'Aug 19, 2022',
+    read: 'Read more...',
+  },
+  {
+    name: 'DNS (Domain Name System)',
+    description:
+      'A DNS (Domain Name System) is a service that translates domain names into IP addresses. It is a hierarchical, distributed database that stores information associated with domain names in a network.',
+    image:
+      'https://img-0.journaldunet.com/JWF_xPKNOuVujcIak_mazUDk8Ns=/540x/smart/f5abd03528314fea91c760664a8783e6/ccmcms-jdn/39476110.jpg',
+    source_link: 'https://www.cloudflare.com/fr-fr/learning/dns/what-is-dns/',
+    published_at: 'Feb 01, 2023',
+    read: 'Read more...',
+  },
+  {
+    name: 'Vite.js Tutorial',
+    description:
+      'Vite.js is a fast development tool for modern web projects. It focuses on speed and performance by improving the development experience.',
+    image:
+      'https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/getting-started-with-vite.png',
+    source_link: 'https://www.freecodecamp.org/news/get-started-with-vite/',
+    published_at: 'Avr 6, 2022',
     read: 'Read more...',
   },
   {
@@ -731,25 +812,6 @@ const news = [
     source_link:
       'https://techvblogs.com/blog/how-to-install-react-in-laravel-9-with-vite',
     published_at: 'Sep, 2022',
-    read: 'Read more...',
-  },
-  {
-    name: 'Preferences Visual Studio Code',
-    description:
-      'In this tutorial, Grafikart proposes to discover its configuration on Visual Studio Code. It edits in particular the settings.json file to customize the interface and the features of the editor.',
-    image: 'https://biolibre.fr/images/articles/visual_studio_code.jpeg',
-    source_link: 'https://grafikart.fr/tutoriels/vscode-settings-2096',
-    published_at: 'Nov, 2022',
-    read: 'Read more...',
-  },
-  {
-    name: 'PHP Object Oriented Programming',
-    description:
-      'In this article, we will learn how to program in PHP in an object-oriented way. We will see the concepts of classes, objects, inheritance, interfaces, abstract classes, etc.',
-    image:
-      'https://blog.nicolashachet.com/wp-content/uploads/2013/02/Php-POO.jpg',
-    source_link: 'https://www.bgmp.fr/la-programmation-orientee-objet-en-php/',
-    published_at: 'Jul 8, 2020',
     read: 'Read more...',
   },
 ]
