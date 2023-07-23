@@ -6,7 +6,7 @@ const Error404 = () => {
       <div className="my-20">
         <Navbar />
       </div>
-      <div className="relative overflow-y-auto ">
+      <div className="relative overflow-y-auto sm:h-full h-[688px]">
         <NotFound />
         <StarsCanvas />
       </div>
