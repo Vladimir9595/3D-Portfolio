@@ -98,6 +98,15 @@ To make that, run the command below :
 npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome @fortawesome/fontawesome-svg-core framer-motion react-router-dom
 ```
 
+### Install multilanguages packages
+
+To build your website in multilanguages, you need some additionals packages.
+To make that, run the command below :
+
+```bash
+npm install --legacy-peer-deps i18next react-i18next
+```
+
 ### Add tailwind using Vite proprieties
 
 You need to install two packages for Tailwind when you use React.js. They are **postcss** and **autoprefixer**
