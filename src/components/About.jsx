@@ -1,4 +1,5 @@
 import React from 'react'
+import cv from '../assets/logo_cv.png'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
@@ -6,8 +7,22 @@ import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 
 const About = () => {
+  const handleIconClick = (url) => {
+    window.open(url, '_blank')
+  }
+
   return (
     <>
+      <img
+        src={cv}
+        alt="logo_cv"
+        className="sm:w-[50px] w-[30px] sm:h-[50px] h-[30px] object-contain cursor-pointer sm:mt-5 mt-2 sm:mb-[-4rem] mb-[-3rem] ml-[17rem] sm:ml-[70rem]"
+        onClick={() =>
+          handleIconClick(
+            'https://cdn.vladimir-portfolio.com/shared/pdf/CV_VLADIMIR_SACCHETTO.pdf',
+          )
+        }
+      />
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>

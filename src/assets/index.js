@@ -3,6 +3,7 @@ import github from './github.png'
 import cdn from './cdn.png'
 import menu from './menu.svg'
 import close from './close.svg'
+import cv from './logo_cv.png'
 
 import css from './tech/css.png'
 import docker from './tech/docker.png'
@@ -44,6 +45,7 @@ export {
   github,
   cdn,
   menu,
+  cv,
   close,
   css,
   docker,
