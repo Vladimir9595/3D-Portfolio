@@ -7,6 +7,7 @@ import {
   faLinkedin,
   faFacebook,
   faInstagram,
+  faGitlab,
 } from '@fortawesome/free-brands-svg-icons'
 
 import { styles } from '../styles'
@@ -86,6 +87,18 @@ const Footer = () => {
           |
         </span>
         <div className="flex items-center ml-[-12px]">
+          <a
+            onClick={() =>
+              handleIconClick('gitlab', 'https://gitlab.com/Vladimir9595')
+            }
+          >
+            <FontAwesomeIcon
+              icon={faGitlab}
+              className={`${
+                active === 'gitlab' ? 'text-white' : 'text-secondary'
+              } hover:text-white md:text-[1.90em] text-[1.25em] flex justify-center items-center cursor-pointer md:ml-7 ml-3 object-contain object-contain`}
+            />
+          </a>
           <a
             onClick={() =>
               handleIconClick('github', 'https://github.com/Vladimir9595')
