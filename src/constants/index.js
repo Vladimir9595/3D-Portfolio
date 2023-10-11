@@ -24,6 +24,8 @@ import {
   vmware,
   windows,
   office365,
+  ale,
+  cnam,
   ccs,
   sonnenhof,
   glaubitz,
@@ -255,10 +257,10 @@ const experiences = [
   },
   {
     title: 'IT Technical Support',
-    company_name: 'CCS',
+    company_name: 'CCS Sat-Client',
     icon: ccs,
     iconBg: '#E6DEDD',
-    date: 'Sept 2021 - Present',
+    date: 'Sept 2021 - August 2023',
     points: [
       'Work-study contract within the SAT-Client belonging to the CCS of the Crédit Mutuel Alliance Fédérale group in Strasbourg.',
       'Main role: provide assistance to professional users for their remote banking space.',
@@ -266,12 +268,25 @@ const experiences = [
       'Helping users to navigate their online banking space and ensuring the rapid and secure transmission of their financial data.',
     ],
   },
+  {
+    title: 'IT Salesforce Developer',
+    company_name: 'ALE International',
+    icon: ale,
+    iconBg: '#E6DEDD',
+    date: 'Sept 2023 - Present',
+    points: [
+      'Work-study contract within the Alcatel-Lucent Enterprise in Strasbourg.',
+      'Main role: develop and maintain the Salesforce platform for customers.',
+      'Ensure the follow-up of remote branches in the Gitlab repository.',
+      'Respond to customer requests and provide technical support.',
+    ],
+  },
 ]
 
 const schools = [
   {
     title: "Bachelor's degree",
-    company_name: 'ITES Pitagora',
+    school_name: 'ITES Pitagora',
     icon: pitagora,
     iconBg: '#383E56',
     date: 'Sept 2009 - July 2014',
@@ -289,7 +304,7 @@ const schools = [
   },
   {
     title: 'Medical and Psychological Assistance',
-    company_name: 'IFCAAD Schiltigheim',
+    school_name: 'IFCAAD Schiltigheim',
     icon: ifcaad,
     iconBg: '#E6DEDD',
     date: 'October 2015 - May 2017',
@@ -303,10 +318,10 @@ const schools = [
   },
   {
     title: 'Superior Technical Bachelor',
-    company_name: 'CCI Campus Strasbourg',
+    school_name: 'CCI Campus Strasbourg',
     icon: ccicampus,
     iconBg: '#383E56',
-    date: 'Sept 2021 - Present',
+    date: 'Sept 2021 - July 2023',
     points: [
       'Expression and communication in English',
       'Mathematics for computer science and applied algorithms',
@@ -318,6 +333,27 @@ const schools = [
       'Analyze connections (logs)',
       'Take security into account in a development project',
       'Programming languages: HTML, CSS, JS, PHP, MYSQL, KOTLIN',
+    ],
+  },
+  {
+    title: 'Engineering Degree',
+    school_name: 'CNAM of Grand Est',
+    icon: cnam,
+    iconBg: '#383E56',
+    date: 'Sept 2023 - Present',
+    points: [
+      'Expression and communication in English to obtain the TOEIC certification',
+      'Mathematics for computer science and applied algorithms',
+      'Object-Oriented Programming in C#',
+      'Software Solutions and Business Applications',
+      'Design and develop an application solution',
+      'Managing data (SQL)',
+      'Ensure the cybersecurity of an application solution and its development',
+      'Analyze connections (logs)',
+      'Take security into account in a development project',
+      'Linear algebra and probability with matrices',
+      'Programming languages: HTML, CSS, JS, PHP, JAVA, C, C++, C#, MYSQL',
+      'Internationnal mobility, 3 months in a foreign country',
     ],
   },
 ]
@@ -725,7 +761,8 @@ const news = [
     name: 'Preferences Visual Studio Code',
     description:
       'In this tutorial, Grafikart proposes to discover its configuration on Visual Studio Code. It edits in particular the settings.json file to customize the interface and the features of the editor.',
-    image: 'https://biolibre.fr/images/articles/visual_studio_code.jpeg',
+    image:
+      'https://blog.cloudanalogy.com/wp-content/uploads/2020/03/vsc-01.jpg',
     source_link: 'https://grafikart.fr/tutoriels/vscode-settings-2096',
     published_at: 'Nov, 2022',
     read: 'Read more...',
