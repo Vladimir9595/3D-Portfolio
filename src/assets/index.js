@@ -31,6 +31,7 @@ import virtualbox from './tech/virtualbox.png'
 import vmware from './tech/vmware.png'
 import windows from './tech/windows.png'
 
+import ale from './company/ale.png'
 import ccs from './company/ccs.png'
 import sonnenhof from './company/sonnenhof.png'
 import glaubitz from './company/glaubitz.png'
@@ -39,6 +40,7 @@ import service from './company/service_civique.png'
 import pitagora from './schools/pitagora.png'
 import ifcaad from './schools/ifcaad.png'
 import ccicampus from './schools/ccicampus.png'
+import cnam from './schools/cnam.png'
 
 export {
   logo,
@@ -47,6 +49,8 @@ export {
   menu,
   cv,
   close,
+  ale,
+  cnam,
   css,
   docker,
   figma,
