@@ -22,7 +22,7 @@ const SchoolCard = ({ school }) => (
       <div className="flex justify-center items-center w-full h-full">
         <img
           src={school.icon}
-          alt={school.company_name}
+          alt={school.school_name}
           className="w-[60%] h-[60%] object-contain"
         ></img>
       </div>
@@ -34,7 +34,7 @@ const SchoolCard = ({ school }) => (
         className="text-[#373737] text-[16px] font-semibold"
         style={{ margin: 0 }}
       >
-        {school.company_name}
+        {school.school_name}
       </p>
     </div>
 
