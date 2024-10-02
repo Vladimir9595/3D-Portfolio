@@ -1,13 +1,43 @@
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import React, { useEffect, useState } from 'react'
+import { initReactI18next, useTranslation } from 'react-i18next'
+import i18next from 'i18next'
 
 import { BallCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { programming, framework, back, devops, softwares } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
+const translationEn = {
+  subTitle: 'what i learnt',
+  text: 'In this section, I will present the technologies that I acquired during my BTS training, as well as those that I learned on my own. <br/> To make it easier to understand, I have organized these technologies into different categories.',
+}
+const translationFr = {
+  notfoundTitle: 'Ce que je sais faire',
+  notfoundText:
+    "Dans cette section, je vais vous presenter les technologies que j'ai acquis durant mon BTS mais également celles que j'ai appris de moi-même. Pour faciliter la comprhéension, j'ai organisé ces technologies en différentes catégories.",
+}
+
+i18next.use(initReactI18next).init({
+  resources: {
+    en: { translation: translationEn },
+    fr: { translation: translationFr },
+  },
+  debug: true,
+  lng: 'en',
+  fallbackLng: 'en',
+  interpolation: { escapeValue: false },
+})
+
 const Tech = () => {
+  const { t, i18n } = useTranslation()
+
+  const onChange = (e) => {
+    const selectedLanguage = e.target.value
+    i18n.changeLanguage(selectedLanguage)
+  }
+
   const technologies = [
     {
       title: 'Programming Languages',
@@ -34,6 +64,8 @@ const Tech = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
+    i18n.changeLanguage('en') // Change the language here if needed
+
     const mediaQuery = window.matchMedia('(max-width: 600px)')
 
     const handleMediaQueryChange = (event) => {
@@ -51,17 +83,20 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>what i learnt</p>
-        <h2 className={styles.sectionHeadText}>Tech</h2>
+        <div className="absolute right-1">
+          <select name="language" className="rounded-md" onChange={onChange}>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+          </select>
+        </div>
+        <p className={styles.sectionSubText}>{t('subTitle')}</p>
+        <h2 className={styles.sectionHeadText}>Technologies</h2>
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mb-5 text-[#373737] text-justify sm:text-[18px] text-[13px] leading-[30px]"
       >
-        In this section, I will present the technologies that I acquired during
-        my BTS training, as well as those that I learned on my own. <br /> To
-        make it easier to understand, I have organized these technologies into
-        different categories.
+        {t('text')}
       </motion.p>
 
       {technologies.map((technology) => (

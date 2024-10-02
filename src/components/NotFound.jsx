@@ -6,6 +6,27 @@ import i18next from 'i18next'
 
 import { textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
+import { useTexture } from '@react-three/drei'
+
+const translationEn = {
+  notfoundTitle: 'Page Not found',
+  notfoundText: 'Ooops, the page you are looking for does not exist',
+}
+const translationFr = {
+  notfoundTitle: "La page n'existe pas",
+  notfoundText: 'Ooops, la page que vous recherchez n’existe pas',
+}
+
+i18next.use(initReactI18next).init({
+  resources: {
+    en: { translation: translationEn },
+    fr: { translation: translationFr },
+  },
+  debug: true,
+  lng: 'en',
+  fallbackLng: 'en',
+  interpolation: { escapeValue: false },
+})
 
 const translationEn = {
   notfoundTitle: 'Page Not found',
