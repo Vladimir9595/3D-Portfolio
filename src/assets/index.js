@@ -4,6 +4,7 @@ import cdn from './cdn.png'
 import menu from './menu.svg'
 import close from './close.svg'
 import cv from './logo_cv.png'
+import gearwheel from './gearwheel.svg'
 
 import css from './tech/css.png'
 import docker from './tech/docker.png'
@@ -48,6 +49,7 @@ export {
   cdn,
   menu,
   cv,
+  gearwheel,
   close,
   ale,
   cnam,
