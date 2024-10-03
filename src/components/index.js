@@ -7,6 +7,7 @@ import School from './School'
 import Experience from './Experience'
 import ProjectCard from './ProjectCard'
 import NewCard from './NewCard'
+import LoginCard from './LoginCard'
 import Contact from './Contact'
 import Mention from './Mention'
 import Footer from './Footer'
@@ -21,6 +22,7 @@ export {
   Experience,
   ProjectCard,
   NewCard,
+  LoginCard,
   Contact,
   Mention,
   Footer,
