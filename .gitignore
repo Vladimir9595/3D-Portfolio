@@ -11,7 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-package-lock.json
 database.js
 
 # Editor directories and files
@@ -24,3 +23,4 @@ database.js
 *.njsproj
 *.sln
 *.sw?
+package-lock.json
