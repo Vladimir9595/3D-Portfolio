@@ -8,6 +8,8 @@ import Experience from './Experience'
 import ProjectCard from './ProjectCard'
 import NewCard from './NewCard'
 import LoginCard from './LoginCard'
+import NewsHandler from './NewsHandler'
+import ProjectsHandler from './ProjectsHandler'
 import Contact from './Contact'
 import Mention from './Mention'
 import Footer from './Footer'
@@ -23,6 +25,8 @@ export {
   ProjectCard,
   NewCard,
   LoginCard,
+  ProjectsHandler,
+  NewsHandler,
   Contact,
   Mention,
   Footer,

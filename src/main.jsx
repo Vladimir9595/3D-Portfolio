@@ -13,6 +13,7 @@ import News from './views/News'
 import Projects from './views/Projects'
 import Mentions from './views/Mentions'
 import Login from './views/Login'
+import Handler from './views/Handler'
 import Error404 from './views/errors/Error404'
 import './index.css'
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="/projects" element={<Projects />} />
       <Route path="/news" element={<News />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/handler" element={<Handler />} />
       <Route path="*" element={<Error404 />} />
     </>,
   ),
