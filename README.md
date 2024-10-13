@@ -3,7 +3,7 @@
 <div align="center" >
 <h1 align="center">Portfolio 3D</h1>
  <img
-      src="https://cdn.vladimir-portfolio.com/shared/images/vs_logo.png"
+      src="https://cdn.vladimir-portfolio.eu/shared/images/vs_logo.png"
       alt="logo"
       width="100"
       height="100"
@@ -11,7 +11,7 @@
 
 <h2>This is my personal 3D Portfolio</h2>
 <h4>
-    <a href="https://www.vladimir-portfolio.com">Go to the site</a>
+    <a href="https://www.vladimir-portfolio.eu">Go to the site</a>
   <span> · </span>
     <a href="https://github.com/Vladimir9595/3D-Portfolio/issues">Report a bug </a>
   <span> · </span>
@@ -499,6 +499,5 @@ Then you can create your `i18next.config.js` file in the `src` folder. -->
 ## :wave: Contributors
 
 - **Vladimir SACCHETTO** _alias_ [@VladimirSacchetto](https://github.com/Vladimir9595)
-- **Alexis HENRY** _alias_ [@AlxisHenry](https://github.com/AlxisHenry)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
