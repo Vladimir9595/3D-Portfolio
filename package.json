@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://www.vladimir-portfolio.com",
+  "homepage": "https://www.vladimir-portfolio.eu",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
