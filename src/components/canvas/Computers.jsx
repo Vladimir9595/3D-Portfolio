@@ -9,6 +9,7 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
+      <ambientLight intensity={0.1} />
       <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
@@ -21,8 +22,8 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.4 : 0.6}
+        position={isMobile ? [0, -3, -0.5] : [0, -3.2, -1]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -34,7 +35,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia('(max-width: 500px)')
+    const mediaQuery = window.matchMedia('(max-width: 640px)')
 
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches)
@@ -54,24 +55,32 @@ const ComputersCanvas = () => {
   }, [])
 
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+    <div style={{ width: '100%', height: '100vh' }}>
+      <Canvas
+        style={{
+          width: isMobile ? '100vw' : '100vw',
+          height: isMobile ? '100vh' : '100vh',
+        }}
+        frameloop="demand"
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+            autoRotate={true}
+            autoRotateSpeed={isMobile ? 1 : 1}
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </div>
   )
 }
 

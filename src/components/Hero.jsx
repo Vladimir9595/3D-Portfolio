@@ -1,6 +1,6 @@
 import gearwheel from '../assets/gearwheel.svg'
 import { styles } from '../styles'
-import { EarthCanvas } from './canvas/'
+import { ComputersCanvas } from './canvas/'
 import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <EarthCanvas />
+      <ComputersCanvas />
     </section>
   )
 }
