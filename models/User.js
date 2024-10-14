@@ -7,11 +7,11 @@ const User = define('User', {
     primaryKey: true,
     autoIncrement: true,
   },
-  first_name: {
+  firstName: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  last_name: {
+  lastName: {
     type: DataTypes.STRING,
     allowNull: false,
   },
@@ -28,6 +28,12 @@ const User = define('User', {
   password: {
     type: DataTypes.STRING,
     allowNull: false,
+  },
+  createdAt: {
+    type: DataTypes.DATE,
+  },
+  updatedAt: {
+    type: DataTypes.DATE,
   },
 })
 

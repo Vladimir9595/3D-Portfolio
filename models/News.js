@@ -1,9 +1,7 @@
 import { DataTypes } from 'sequelize'
-// import { define } from './index.js'
 import sequelize from './index.js'
 
 const News = sequelize.define('News', {
-  // const News = define('News', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,

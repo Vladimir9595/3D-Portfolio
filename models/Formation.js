@@ -25,6 +25,12 @@ const Formation = define('Formation', {
   points: {
     type: DataTypes.TEXT,
   },
+  createdAt: {
+    type: DataTypes.DATE,
+  },
+  updatedAt: {
+    type: DataTypes.DATE,
+  },
 })
 
 module.exports = Formation

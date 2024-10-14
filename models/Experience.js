@@ -28,6 +28,12 @@ const Experience = define('Experience', {
   points: {
     type: DataTypes.TEXT,
   },
+  createdAt: {
+    type: DataTypes.DATE,
+  },
+  updatedAt: {
+    type: DataTypes.DATE,
+  },
 })
 
 module.exports = Experience
