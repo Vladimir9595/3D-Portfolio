@@ -19,7 +19,7 @@ const About = () => {
         className="sm:w-[50px] w-[30px] sm:h-[50px] h-[30px] object-contain cursor-pointer sm:mt-5 mt-2 sm:mb-[-4rem] mb-[-3rem] ml-[17rem] sm:ml-[70rem]"
         onClick={() =>
           handleIconClick(
-            'https://cdn.vladimir-portfolio.com/shared/pdf/CV_VLADIMIR_SACCHETTO.pdf',
+            'https://cdn.vladimir-portfolio.eu/shared/pdf/CV_VLADIMIR_SACCHETTO_ENG.pdf',
           )
         }
       />

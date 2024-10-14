@@ -185,7 +185,7 @@ const mentions = [
   {
     title: 'Editor and owner of the website',
     content:
-      'Mr. Vladimir SACCHETTO\n Editorial manager : Vladimir SACCHETTO\n Email : vladisac@hotmail.it\n Website : www.vladimir-portfolio.com',
+      'Mr. Vladimir SACCHETTO\n Editorial manager : Vladimir SACCHETTO\n Email : vladisac@hotmail.it\n Website : www.vladimir-portfolio.eu',
   },
   {
     title: 'Hosting',
@@ -195,7 +195,7 @@ const mentions = [
   {
     title: 'Terms and conditions of use',
     content:
-      'This site www.vladimir-portfolio.com is proposed in different web languages (ReactJs - ThreeJs - TailwindCSS). For a better comfort of use and a more pleasant graphics, it is recommended to use modern browsers such as Microsoft Edge, Safari, Firefox, Google Chrome, Brave, etc...\n Mr. Vladimir SACCHETTO uses all the means at his disposal to ensure reliable information and a reliable update of his website. However, errors or omissions may occur. Mr. Vladimir SACCHETTO is in no way responsible for the use made of this information, and for any direct or indirect damage that may result from it.',
+      'This site www.vladimir-portfolio.eu is proposed in different web languages (ReactJs - ThreeJs - TailwindCSS). For a better comfort of use and a more pleasant graphics, it is recommended to use modern browsers such as Microsoft Edge, Safari, Firefox, Google Chrome, Brave, etc...\n Mr. Vladimir SACCHETTO uses all the means at his disposal to ensure reliable information and a reliable update of his website. However, errors or omissions may occur. Mr. Vladimir SACCHETTO is in no way responsible for the use made of this information, and for any direct or indirect damage that may result from it.',
   },
   {
     title: 'Intellectual Property Rights',
@@ -210,7 +210,7 @@ const mentions = [
   {
     title: 'Personal information',
     content:
-      'In general, you are not required to provide us with your personal data when you visit the www.vladimir-portfolio.com website.\n You can refuse to provide your personal data. In this case, you will not be able to use the services of the site, in particular that of requesting information.\n We may automatically collect certain information about you when you simply browse this website, including: information about your use of the site, such as the areas you visit and the services you access, your IP address, your browser type, your access times.\n Such information is used exclusively for internal statistical purposes. The databases are protected by the provisions of the law of July 1, 1998 transposing the directive 96/9 of March 11, 1996 on the legal protection of databases.',
+      'In general, you are not required to provide us with your personal data when you visit the www.vladimir-portfolio.eu website.\n You can refuse to provide your personal data. In this case, you will not be able to use the services of the site, in particular that of requesting information.\n We may automatically collect certain information about you when you simply browse this website, including: information about your use of the site, such as the areas you visit and the services you access, your IP address, your browser type, your access times.\n Such information is used exclusively for internal statistical purposes. The databases are protected by the provisions of the law of July 1, 1998 transposing the directive 96/9 of March 11, 1996 on the legal protection of databases.',
   },
 ]
 
@@ -377,9 +377,9 @@ const schoolProjects = [
         color: 'red-text-gradient',
       },
     ],
-    image: 'https://cdn.vladimir-portfolio.com/shared/images/restiloc_logo.png',
+    image: 'https://cdn.vladimir-portfolio.eu/shared/images/restiloc_logo.png',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-restiloc_doc_technique.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/cci-restiloc_doc_technique.pdf',
     project_code_link: 'https://github.com/Restiloc',
   },
   {
@@ -400,9 +400,9 @@ const schoolProjects = [
         color: 'red-text-gradient',
       },
     ],
-    image: 'https://cdn.vladimir-portfolio.com/shared/images/restiloc_logo.png',
+    image: 'https://cdn.vladimir-portfolio.eu/shared/images/restiloc_logo.png',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-restiloc_doc_utilisateur.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/cci-restiloc_doc_utilisateur.pdf',
     project_code_link: 'https://github.com/Restiloc',
   },
   {
@@ -424,9 +424,9 @@ const schoolProjects = [
       },
     ],
     image:
-      'https://cdn.vladimir-portfolio.com/shared/images/logo_ccicampus_appro.png',
+      'https://cdn.vladimir-portfolio.eu/shared/images/logo_ccicampus_appro.png',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-campus_doc_technique.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/cci-campus_doc_technique.pdf',
     project_code_link: 'https://github.com/CCI-Campus',
   },
   {
@@ -448,9 +448,9 @@ const schoolProjects = [
       },
     ],
     image:
-      'https://cdn.vladimir-portfolio.com/shared/images/logo_ccicampus_appro.png',
+      'https://cdn.vladimir-portfolio.eu/shared/images/logo_ccicampus_appro.png',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/cci-campus_doc_utilisateur.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/cci-campus_doc_utilisateur.pdf',
     project_code_link: 'https://github.com/CCI-Campus',
   },
   {
@@ -524,9 +524,9 @@ const schoolProjects = [
     image:
       'https://www.wysiwyg.fr/wp-content/uploads/2021/12/F36-1-768x535.png',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solution_PCA.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/SACCHETTO_Vladimir_TP_Solution_PCA.pdf',
     project_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solution_PCA.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/SACCHETTO_Vladimir_TP_Solution_PCA.pdf',
   },
   {
     name: 'BCP & DRP',
@@ -548,9 +548,9 @@ const schoolProjects = [
     ],
     image: 'https://myosotis.fr/wp-content/uploads/2017/04/pca-pra-1.png',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
     project_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/SACCHETTO_Vladimir_TP_Solutions_PCA_PRA.pdf',
   },
   {
     name: 'Firewall Pf_Sense',
@@ -573,9 +573,9 @@ const schoolProjects = [
     image:
       'https://adeo-informatique.fr/wp-content/uploads/2018/11/pfSense-logo_ok.png',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_PF_Sense.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/SACCHETTO_Vladimir_TP_PF_Sense.pdf',
     project_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/SACCHETTO_Vladimir_TP_PF_Sense.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/SACCHETTO_Vladimir_TP_PF_Sense.pdf',
   },
   {
     name: 'Laravel Portfolio',
@@ -595,7 +595,7 @@ const schoolProjects = [
         color: 'red-text-gradient',
       },
     ],
-    image: 'https://cdn.vladimir-portfolio.com/shared/images/laravel_logo.png',
+    image: 'https://cdn.vladimir-portfolio.eu/shared/images/laravel_logo.png',
     source_code_link:
       'https://github.com/Vladimir9595/CCI-SIO21-Portfolio/blob/main/README.md',
     project_code_link: 'https://github.com/Vladimir9595/CCI-SIO21-Portfolio',
@@ -621,11 +621,11 @@ const workProjects = [
         color: 'red-text-gradient',
       },
     ],
-    image: 'https://cdn.vladimir-portfolio.com/shared/images/CM_CIC.jpg',
+    image: 'https://cdn.vladimir-portfolio.eu/shared/images/CM_CIC.jpg',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/Assistance technique pour la Banque à distance (BAD).pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/Assistance technique pour la Banque à distance (BAD).pdf',
     project_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/Assistance technique pour la Banque à distance (BAD).pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/Assistance technique pour la Banque à distance (BAD).pdf',
   },
   {
     name: 'Software solution HBS',
@@ -647,9 +647,9 @@ const workProjects = [
     ],
     image: 'https://i.ytimg.com/vi/-5MWtSwYZK0/maxresdefault.jpg',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/Aide et accompagnement dans la solution logicielle HBS.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/Aide et accompagnement dans la solution logicielle HBS.pdf',
     project_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/Aide et accompagnement dans la solution logicielle HBS.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/Aide et accompagnement dans la solution logicielle HBS.pdf',
   },
   {
     name: 'Professional interview',
@@ -672,9 +672,9 @@ const workProjects = [
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYRS-wpAG0tfAlhQSBlvVfmmSntuWoQ7TUg&usqp=CAU',
     source_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/Entretien professionnel individuel.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/Entretien professionnel individuel.pdf',
     project_code_link:
-      'https://cdn.vladimir-portfolio.com/shared/pdf/Entretien professionnel individuel.pdf',
+      'https://cdn.vladimir-portfolio.eu/shared/pdf/Entretien professionnel individuel.pdf',
   },
 ]
 
@@ -721,7 +721,7 @@ const personalProjects = [
         color: 'red-text-gradient',
       },
     ],
-    image: 'https://cdn.vladimir-portfolio.com/shared/images/logo_cdn.png',
+    image: 'https://cdn.vladimir-portfolio.eu/shared/images/logo_cdn.png',
     source_code_link: 'https://github.com/Vladimir9595/CDN/blob/main/README.md',
     project_code_link: 'https://github.com/Vladimir9595/CDN',
   },

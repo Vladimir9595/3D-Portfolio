@@ -53,7 +53,7 @@ const NotFound = () => {
           </select>
         </div>
         <img
-          src="https://cdn.vladimir-portfolio.com/shared/images/smile.png"
+          src="https://cdn.vladimir-portfolio.eu/shared/images/smile.png"
           alt="smile"
           className="md:w-[20%] w-[30%] md:h-[20%] h-[30%] object-contain mx-auto md:my-[5vh] my-[5vh]"
         />
