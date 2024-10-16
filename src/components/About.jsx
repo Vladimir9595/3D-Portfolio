@@ -12,11 +12,11 @@ const About = () => {
   }
 
   return (
-    <>
+    <section className="relative w-full h-screen mx-auto overflow-x-hidden">
       <img
         src={cv}
         alt="logo_cv"
-        className="sm:w-[50px] w-[30px] sm:h-[50px] h-[30px] object-contain cursor-pointer sm:mt-5 mt-2 sm:mb-[-4rem] mb-[-3rem] ml-[17rem] sm:ml-[70rem]"
+        className="absolute top-4 right-4 md:mr-36 sm:w-12 w-8 sm:h-12 h-8 object-contain cursor-pointer"
         onClick={() =>
           handleIconClick(
             'https://cdn.vladimir-portfolio.eu/shared/pdf/CV_VLADIMIR_SACCHETTO_ENG.pdf',
@@ -48,7 +48,7 @@ const About = () => {
         For any further inquiries or additional information, please feel free to
         reach out to me.
       </motion.p>
-    </>
+    </section>
   )
 }
 
