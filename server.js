@@ -18,10 +18,36 @@ app.get('/api/news', async (req, res) => {
   }
 })
 
+app.get('/api/news/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const news = await News.findByPk(id)
+    if (news) {
+      res.json(news)
+    } else {
+      res.status(404).json({ error: 'News not found' })
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
 app.post('/api/news', async (req, res) => {
   try {
     const { name } = req.body
-    const newNews = await News.create({ name })
+    const { description } = req.body
+    const { image } = req.body
+    const { sourceLink } = req.body
+    const { publishedAt } = req.body
+    const { readStatus } = req.body
+    const newNews = await News.create({
+      name,
+      description,
+      image,
+      sourceLink,
+      publishedAt,
+      readStatus,
+    })
     res.json(newNews)
   } catch (err) {
     res.status(500).json({ error: err.message })
@@ -32,9 +58,19 @@ app.put('/api/news/:id', async (req, res) => {
   try {
     const { id } = req.params
     const { name } = req.body
+    const { description } = req.body
+    const { image } = req.body
+    const { sourceLink } = req.body
+    const { publishedAt } = req.body
+    const { readStatus } = req.body
     const news = await News.findByPk(id)
     if (news) {
       news.name = name
+      news.description = description
+      news.image = image
+      news.sourceLink = sourceLink
+      news.publishedAt = publishedAt
+      news.readStatus = readStatus
       await news.save()
       res.json(news)
     } else {
@@ -70,10 +106,42 @@ app.get('/api/projects', async (req, res) => {
   }
 })
 
+app.get('/api/projects/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const projects = await Project.findByPk(id)
+    if (projects) {
+      res.json(projects)
+    } else {
+      res.status(404).json({ error: 'Projects not found' })
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
 app.post('/api/projects', async (req, res) => {
   try {
     const { name } = req.body
-    const newProject = await Project.create({ name })
+    const { description } = req.body
+    const { tags } = req.body
+    const { image } = req.body
+    const { sourceCodeLink } = req.body
+    const { projectCodeLink } = req.body
+    const { isSchoolProject } = req.body
+    const { isWorkProject } = req.body
+    const { isPersonalProject } = req.body
+    const newProject = await Project.create({
+      name,
+      description,
+      tags,
+      image,
+      sourceCodeLink,
+      projectCodeLink,
+      isSchoolProject,
+      isWorkProject,
+      isPersonalProject,
+    })
     res.json(newProject)
   } catch (err) {
     res.status(500).json({ error: err.message })
@@ -84,9 +152,25 @@ app.put('/api/projects/:id', async (req, res) => {
   try {
     const { id } = req.params
     const { name } = req.body
+    const { description } = req.body
+    const { tags } = req.body
+    const { image } = req.body
+    const { sourceCodeLink } = req.body
+    const { projectCodeLink } = req.body
+    const { isSchoolProject } = req.body
+    const { isWorkProject } = req.body
+    const { isPersonalProject } = req.body
     const project = await Project.findByPk(id)
     if (project) {
       project.name = name
+      project.description = description
+      project.tags = tags
+      project.image = image
+      project.sourceCodeLink = sourceCodeLink
+      project.projectCodeLink = projectCodeLink
+      project.isSchoolProject = isSchoolProject
+      project.isWorkProject = isWorkProject
+      project.isPersonalProject = isPersonalProject
       await project.save()
       res.json(project)
     } else {
