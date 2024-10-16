@@ -4,10 +4,10 @@ import { ComputersCanvas } from './canvas/'
 import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
-  const navigate = useNavigate() // Use navigate for redirecting to another page
+  const navigate = useNavigate()
 
   const handleIconClick = () => {
-    navigate('/login') // Redirect to the login page
+    navigate('/login')
   }
 
   return (
