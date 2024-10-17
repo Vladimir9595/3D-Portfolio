@@ -13,13 +13,15 @@ const Login = () => {
 
   const isValidInput = (value) => {
     const usernameRegex = /^[a-zA-Z0-9._@-]+$/ // Allow letters, numbers, . @ - _
-    return usernameRegex.test(value) && value.trim() !== '' // Allow empty password (optional)
+    return usernameRegex.test(value) && value.trim() !== ''
   }
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value)
     if (!isValidInput(e.target.value)) {
       setIsValidUsername(false)
+    } else {
+      setIsValidUsername(true)
     }
   }
 
@@ -29,7 +31,6 @@ const Login = () => {
       console.log('Username:', username)
       console.log('Password:', password)
       navigate('/handler')
-      // Your login logic here
     } else {
       console.error('Invalid username or empty password')
     }
@@ -77,14 +78,12 @@ const Login = () => {
             />
           </label>
           <div className="flex justify-center">
-            <div>
-              <button
-                type="submit"
-                className="bg-[#ffffffee] py-3 px-8 rounded-xl outline-none w-fit text-[#373737] font-bold shadow-md shadow-primary hover:bg-[#373737] hover:text-[#ffffffee]"
-              >
-                Submit
-              </button>
-            </div>
+            <button
+              type="submit"
+              className="bg-[#ffffffee] py-3 px-8 rounded-xl outline-none w-fit text-[#373737] font-bold shadow-md shadow-primary hover:bg-[#373737] hover:text-[#ffffffee] cursor-pointer"
+            >
+              Submit
+            </button>
           </div>
         </form>
       </motion.div>
