@@ -10,6 +10,10 @@ import NewCard from './NewCard'
 import LoginCard from './LoginCard'
 import NewsHandler from './NewsHandler'
 import ProjectsHandler from './ProjectsHandler'
+import AddProject from './projects/AddProject'
+import EditProject from './projects/EditProject'
+import AddNews from './news/AddNews'
+import EditNews from './news/EditNews'
 import Contact from './Contact'
 import Mention from './Mention'
 import Footer from './Footer'
@@ -26,6 +30,10 @@ export {
   NewCard,
   LoginCard,
   ProjectsHandler,
+  AddProject,
+  EditProject,
+  AddNews,
+  EditNews,
   NewsHandler,
   Contact,
   Mention,
