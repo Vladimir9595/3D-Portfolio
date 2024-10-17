@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize'
-import { define } from './index.js'
+import sequelize from './index.js'
 
-const Formation = define('Formation', {
+const Formation = sequelize.define('Formation', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
