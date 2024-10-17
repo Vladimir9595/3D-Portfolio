@@ -2,11 +2,37 @@ import express, { json } from 'express'
 import cors from 'cors'
 import News from './models/News.js'
 import Project from './models/Project.js'
+import User from './models/User.js'
 
 // Middleware
 const app = express()
 app.use(cors())
 app.use(json())
+
+// User Routes
+app.get('/api/users', async (req, res) => {
+  try {
+    const users = await User.findAll()
+    res.json(users)
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+app.post('api/login', async (req, res) => {
+  try {
+    const { email, password } = req.body
+    const user = await User.findOne({ where: { email, password } })
+    if (user) {
+      res.json(user)
+      alert('Login successful')
+    } else {
+      res.status(400).json({ error: 'Invalid credentials' })
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
 
 // News Routes
 app.get('/api/news', async (req, res) => {
