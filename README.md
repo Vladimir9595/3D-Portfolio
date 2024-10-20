@@ -107,6 +107,15 @@ To make that, run the command below :
 npm install --legacy-peer-deps i18next react-i18next
 ```
 
+### Install database packages
+
+To build your website with a database, you need some additionals packages.
+To make that, run the command below :
+
+```bash
+npm install --legacy-peer-deps axios express cors sequelize mysql2 bcrypt
+```
+
 ### Add tailwind using Vite proprieties
 
 You need to install two packages for Tailwind when you use React.js. They are **postcss** and **autoprefixer**
