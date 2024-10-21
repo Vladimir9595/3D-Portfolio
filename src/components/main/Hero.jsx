@@ -1,6 +1,6 @@
-import gearwheel from '../assets/gearwheel.svg'
-import { styles } from '../styles'
-import { ComputersCanvas } from './canvas/'
+import gearwheel from '../../assets/gearwheel.svg'
+import { styles } from '../../styles'
+import { ComputersCanvas } from '../canvas'
 import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {

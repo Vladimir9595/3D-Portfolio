@@ -1,10 +1,10 @@
 import React from 'react'
-import cv from '../assets/logo_cv.png'
+import cv from '../../assets/logo_cv.png'
 import { motion } from 'framer-motion'
 
-import { styles } from '../styles'
-import { fadeIn, textVariant } from '../utils/motion'
-import { SectionWrapper } from '../hoc'
+import { styles } from '../../styles'
+import { fadeIn, textVariant } from '../../utils/motion'
+import { SectionWrapper } from '../../hoc'
 
 const About = () => {
   const handleIconClick = (url) => {

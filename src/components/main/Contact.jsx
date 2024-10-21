@@ -2,9 +2,9 @@ import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
-import { PlanetCanvas } from './canvas'
-import { SectionWrapper } from '../hoc'
-import { slideIn } from '../utils/motion'
+import { PlanetCanvas } from '../canvas'
+import { SectionWrapper } from '../../hoc'
+import { slideIn } from '../../utils/motion'
 
 const Contact = () => {
   const formRef = useRef()

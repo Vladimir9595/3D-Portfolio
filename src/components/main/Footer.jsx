@@ -10,8 +10,8 @@ import {
   faGitlab,
 } from '@fortawesome/free-brands-svg-icons'
 
-import { styles } from '../styles'
-import { footLinks } from '../constants'
+import { styles } from '../../styles'
+import { footLinks } from '../../constants'
 
 const Footer = () => {
   const [active, setActive] = useState(localStorage.getItem('active') || '')
