@@ -1,22 +1,23 @@
 import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas'
-import Hero from './Hero'
-import Navbar from './Navbar'
-import About from './About'
+import Hero from './main/Hero'
+import Navbar from './main/Navbar'
+import About from './main/About'
 import Tech from './Tech'
-import School from './School'
-import Experience from './Experience'
+import School from './main/School'
+import Experience from './main/Experience'
 import ProjectCard from './ProjectCard'
 import NewCard from './NewCard'
-import LoginCard from './LoginCard'
+import LoginCard from './users/LoginCard'
+import SignupCard from './users/SignupCard'
 import NewsHandler from './NewsHandler'
 import ProjectsHandler from './ProjectsHandler'
 import AddProject from './projects/AddProject'
 import EditProject from './projects/EditProject'
 import AddNews from './news/AddNews'
 import EditNews from './news/EditNews'
-import Contact from './Contact'
+import Contact from './main/Contact'
 import Mention from './Mention'
-import Footer from './Footer'
+import Footer from './main/Footer'
 import NotFound from './NotFound'
 
 export {
@@ -29,6 +30,7 @@ export {
   ProjectCard,
   NewCard,
   LoginCard,
+  SignupCard,
   ProjectsHandler,
   AddProject,
   EditProject,

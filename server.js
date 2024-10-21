@@ -3,6 +3,9 @@ import cors from 'cors'
 import News from './models/News.js'
 import Project from './models/Project.js'
 import User from './models/User.js'
+import { Op } from 'sequelize'
+import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
 
 // Middleware
 const app = express()
@@ -15,6 +18,27 @@ app.get('/api/users', async (req, res) => {
     const users = await User.findAll()
     res.json(users)
   } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+app.post('/api/register', async (req, res) => {
+  try {
+    const { firstName, lastName, username, email, password } = req.body
+
+    const hashedPassword = await bcrypt.hash(password, 10)
+
+    const newUser = await User.create({
+      firstName,
+      lastName,
+      username,
+      email,
+      password: hashedPassword,
+    })
+
+    res.status(201).json(newUser)
+  } catch (err) {
+    console.error('Error creating user:', err)
     res.status(500).json({ error: err.message })
   }
 })
