@@ -13,6 +13,7 @@ import News from './views/News'
 import Projects from './views/Projects'
 import Mentions from './views/Mentions'
 import Login from './views/Login'
+import Signup from './views/Signup'
 import Handler from './views/Handler'
 import AddProject from './components/projects/AddProject'
 import EditProject from './components/projects/EditProject'
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
       <Route path="/projects" element={<Projects />} />
       <Route path="/news" element={<News />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
       <Route path="/handler" element={<Handler />} />
       <Route path="/add-project" element={<AddProject />} />
       <Route path="/edit-project/:id" element={<EditProject />} />
