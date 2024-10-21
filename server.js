@@ -43,17 +43,32 @@ app.post('/api/register', async (req, res) => {
   }
 })
 
-app.post('api/login', async (req, res) => {
+app.post('/api/login', async (req, res) => {
   try {
-    const { email, password } = req.body
-    const user = await User.findOne({ where: { email, password } })
+    const { usernameOrEmail, password } = req.body
+    if (!password) {
+      return res.status(400).json({ error: 'Password is required' })
+    }
+    if (!usernameOrEmail) {
+      return res.status(400).json({ error: 'Username or email is required' })
+    }
+    const user = await User.findOne({
+      where: {
+        [Op.or]: [{ username: usernameOrEmail }, { email: usernameOrEmail }],
+      },
+    })
     if (user) {
-      res.json(user)
-      alert('Login successful')
+      const isPasswordValid = await bcrypt.compare(password, user.password)
+      if (isPasswordValid) {
+        res.json(user)
+      } else {
+        res.status(400).json({ error: "Password doesn't match with database" })
+      }
     } else {
       res.status(400).json({ error: 'Invalid credentials' })
     }
   } catch (err) {
+    console.error('Error during login:', err)
     res.status(500).json({ error: err.message })
   }
 })
