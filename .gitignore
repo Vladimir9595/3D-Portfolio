@@ -13,6 +13,7 @@ dist-ssr
 *.local
 database/*
 models/index.js
+jsconfig.json
 
 # Editor directories and files
 .vscode/*
