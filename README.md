@@ -116,6 +116,12 @@ To make that, run the command below :
 npm install --legacy-peer-deps axios express cors sequelize mysql2 bcrypt
 ```
 
+In addition, you need to install some dependancies to make a secure connection to the database. Here are the packages to install :
+
+```bash
+npm install --legacy-peer-deps jsonwebtoken bcrypt
+```
+
 ### Add tailwind using Vite proprieties
 
 You need to install two packages for Tailwind when you use React.js. They are **postcss** and **autoprefixer**
